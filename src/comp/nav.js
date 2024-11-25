@@ -23,7 +23,7 @@ const Nav = ({search, setSearch, searchProduct}) => {
                 <MdOutlineLocalShipping />
             </div>
             <div className='info'>
-                <p> Free Shippong When Shopping upto 3000VND</p>
+                <p> Miễn phí giao hàng khi mua từ 3.000.000 VNĐ</p>
             </div>
         </div>
         <div className='mid_header'>
@@ -31,7 +31,7 @@ const Nav = ({search, setSearch, searchProduct}) => {
                 <img src='logo.jpg' alt='logo'></img>
             </div>
             <div className='search_box'>
-                <input type='text' value={search} placeholder='search' onChange={(e) => setSearch(e.target.value)} onKeyDown={handleKeyPress}></input>
+                <input type='text' value={search} placeholder='Tìm kiếm' onChange={(e) => setSearch(e.target.value)} onKeyDown={handleKeyPress}></input>
                 <button onClick={searchProduct}><AiOutlineSearch /></button>
             </div>
             {
@@ -43,7 +43,7 @@ const Nav = ({search, setSearch, searchProduct}) => {
                      </div>
                      <div className='btn'>
                          <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-                             Logout</button>
+                             Đăng xuất</button>
                      </div>
                  </div>
                 :
@@ -53,7 +53,7 @@ const Nav = ({search, setSearch, searchProduct}) => {
                         <FiLogIn />
                     </div>
                     <div className='btn'>
-                    <button onClick={() => loginWithRedirect()}>Login</button>
+                    <button onClick={() => loginWithRedirect()}>Đăng nhập</button>
                     </div>
                 </div>
             }
@@ -78,7 +78,7 @@ const Nav = ({search, setSearch, searchProduct}) => {
                 <CiUser />
               </div>
               <div className='info'>
-                <p>Please Login</p>
+                <p>Vui lòng đăng nhập</p>
               </div>
               </>
             }
@@ -86,14 +86,14 @@ const Nav = ({search, setSearch, searchProduct}) => {
           <div className='nav'>
             <ul>
             <li><Link to='/' className='link'>Trang chủ</Link></li>
-              <li><Link to='/shop' className='link'>Cửa hàng</Link></li>
-              <li><Link to='/cart' className='link'>Chi tiết đơn hàng</Link></li>
-              <li><Link to='/about' className='link'>Thông tin về chúng tôi</Link></li>
-              <li><Link to='/contact' className='link'>Liên hệ</Link></li>
+              <li><Link to='/cửa-hàng-thiết-bị-vệ-sinh-nội-thất' className='link'>Cửa hàng</Link></li>
+              <li><Link to='/chi-tiết-đơn-hàng' className='link'>Chi tiết đơn hàng</Link></li>
+              <li><Link to='/công-ty-thiết-bị-vệ-sinh-nội-thất' className='link'>Thông tin công ty</Link></li>
+              <li><Link to='/liên-hệ-công-ty-thiết-bị-vệ-sinh-nội-thất' className='link'>Liên hệ tư vấn</Link></li>
             </ul>
           </div>
           <div className='offer'>
-            <p>flat 10% over all</p>
+            <p>Giảm 10% tấc cả sản phẩm</p>
           </div>
         </div>
     </div>

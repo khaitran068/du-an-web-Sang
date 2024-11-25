@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import ReactPaginate from 'react-paginate'
 import './home.css'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Homeproduct from './home_product'
+import AutoBanner from './banner';
 // import {getProduct} from './home_product'
-import { AiFillEye, AiFillHeart, AiOutlineShoppingCart} from "react-icons/ai";
+import { AiFillEye, AiFillHeart, AiOutlineShoppingCart, AiOutlineClose} from "react-icons/ai";
 import {BiLogoFacebook, BiLogoTwitter, BiLogoInstagram, BiLogoYoutube} from "react-icons/bi";
 
 const Home = ({addtocart}) => {
 
   // Product category
-  const [newProduct, setNewProduct] =  useState([])
-  const [featuredProduct, setFeaturdProduct] =  useState([])
-  const [topProduct, setTopProduct] =  useState([])
+  const [brandLuxta, setBrandLuxta] =  useState([])
+  const [brandInax, setBrandInax] =  useState([])
+  const [brandToto, setBrandToto] =  useState([])
 
   //phan trang
   const itemsPerPage = 16; // Số lượng sản phẩm trên mỗi trang
@@ -47,40 +48,109 @@ const Home = ({addtocart}) => {
   //Product Type
   useEffect(() => 
     {
-      productcategory()
-    })
-    const productcategory = () => 
+      productbrand();
+    }, []);
+    const productbrand = () => 
     {
-      // New Product
-      const newcategory = Homeproduct.filter((x) => 
+      // Luxta brand
+      const brandluxta = Homeproduct.filter((x) => 
       {
-        return x.type === 'new'
+        return x.brand === 'Luxta'
       })
-      setNewProduct(newcategory)
+      setBrandLuxta(brandluxta)
   
-      // Featured Product
-      const featuredcategory = Homeproduct.filter((x) => 
+      // Inax brand
+      const brandinax = Homeproduct.filter((x) => 
       {
-        return x.type === 'featured'
+        return x.brand === 'Inax'
       })
-      setFeaturdProduct(featuredcategory)
+      setBrandInax(brandinax)
   
-      // Top Product
-      const topcategory = Homeproduct.filter((x) => 
+      // Toto brand
+      const brandtoto = Homeproduct.filter((x) => 
       {
-        return x.type === 'top'
+        return x.brand === 'Toto'
       })
-      setTopProduct(topcategory)
+      setBrandToto(brandtoto)
     }
+    // trộn các phần tử trong mảng
+    // function shuffleArray(array) {
+    //   return array.sort(() => Math.random() - 0.5);
+    // }
+
+    // Toggle Product Detail
+    const [showDetail, setShowDetail] = useState(false)
+    // Detail Page Data
+   const [detail, setDetail] = useState([])
+   //Showing Detail Box
+   const detailpage = (product) => 
+   {
+       const detaildata = ([{product}])
+       const productdetail = detaildata[0]['product']
+       // console.log(productdetail)
+       setDetail(productdetail)
+       setShowDetail(true)
+   }
+   const closedetail = () => 
+       {
+           setShowDetail(false)
+       }
+   // xu ly dong detailProduct khi click chuot ben ngoai
+   const detailRef = useRef(null);
+   // Xử lý đóng khi click bên ngoài
+   const handleClickOutside = (event) => {
+       if (detailRef.current && !detailRef.current.contains(event.target)) {
+       setShowDetail(false); // Đóng Product Detail nếu click bên ngoài
+       }
+   };
+   // Gắn và hủy sự kiện
+   useEffect(() => {
+       document.addEventListener("mousedown", handleClickOutside);
+           return () => {
+       document.removeEventListener("mousedown", handleClickOutside);
+       };
+   }, []);
 
   return (
     <>
-        <div className='home'>
-            <div className='top_banner'>
-                <div className='contant'>
-                    <h1>Nâng Tầm Cuộc Sống</h1>
-                    <Link to='/shop' className='link'>Shop Now</Link>
+    {
+        showDetail ?
+        <>
+        <div className='product_detail' ref={detailRef}>
+        <button className='close_btn' onClick={closedetail}><AiOutlineClose /></button>
+            <div className='container'>
+                <div className='img_box'>
+                    <img src={detail.image1} alt=''></img>
                 </div>
+                <div className='info'>
+                    {/* <h4># {detail.cat}</h4> */}
+                    <h2>{detail.Name}</h2>
+                    <div className="description">
+                        {detail.description.split('\n').map((line, index) => (
+                        <p key={index}>{line}</p>
+                        ))}
+                    </div>
+                    <div className="price">
+                        <span className="original-price">
+                            {detail.originalPrice.toLocaleString('vi-VN')} VNĐ
+                        </span>
+                        <span className="discount-price">
+                            {detail.discountPrice.toLocaleString('vi-VN')} VNĐ
+                        </span>
+                    </div>
+                    <button onClick={() => addtocart (detail)}>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        </>
+        :null
+    }
+        <div className='home'>
+            <div className='banner'>
+              <AutoBanner />
+                {/* <div className='contant'>
+                  <Link to='/cửa-hàng-thiết-bị-vệ-sinh-nội-thất' className='link'>Vào mua hàng</Link>
+                </div> */}
             </div>
             <div className='trending'>
               <div className='container'>
@@ -103,9 +173,9 @@ const Home = ({addtocart}) => {
                           <>
                             <div className='box'>
                               <div className='img_box'>
-                                <img src={curElm.image} alt=''></img>
+                                <img onClick={() => detailpage (curElm)} src={curElm.image} alt='' loading='lazy'></img>
                                 <div className='icon'>
-                                  <div className='icon_box'>
+                                  <div onClick={() => detailpage (curElm)} className='icon_box'>
                                     <AiFillEye />
                                   </div>
                                   <div className='icon_box'>
@@ -115,7 +185,7 @@ const Home = ({addtocart}) => {
                               </div>
                               <div className='info'>
                                 <h3>{curElm.Name}</h3>
-                                <p>VND {curElm.price}</p>
+                                {/* <p>{curElm.discountPrice} VNĐ</p> */}
                                 <button className='btn' onClick={() => addtocart (curElm)}>Add to cart</button>
                               </div>
                             </div>
@@ -126,26 +196,27 @@ const Home = ({addtocart}) => {
                     </div>
                     {/* <button>Show More</button> */}
                     <div className='paginate'>
-                    <ReactPaginate
-                      nextLabel="next >"
-                      onPageChange={handlePageClick}
-                      pageRangeDisplayed={3}
-                      // marginPagesDisplayed={2}
-                      pageCount={pageCount}
-                      previousLabel="< previous"
-                      pageClassName="page-item"
-                      pageLinkClassName="page-link"
-                      previousClassName="page-item"
-                      previousLinkClassName="page-link"
-                      nextClassName="page-item"
-                      nextLinkClassName="page-link"
-                      // breakLabel="..."
-                      breakClassName="page-item"
-                      breakLinkClassName="page-link"
-                      containerClassName="pagination"
-                      activeClassName="active"
-                      // renderOnZeroPageCount={null}
-                    />
+                    {pageCount > 1 &&(
+                            <ReactPaginate
+                            nextLabel="next >"
+                            onPageChange={handlePageClick}
+                            pageRangeDisplayed={3}
+                            // marginPagesDisplayed={2}
+                            pageCount={pageCount}
+                            previousLabel="< previous"
+                            pageClassName="page-item"
+                            pageLinkClassName="page-link"
+                            previousClassName="page-item"
+                            previousLinkClassName="page-link"
+                            nextClassName="page-item"
+                            nextLinkClassName="page-link"
+                            // breakLabel="..."
+                            breakClassName="page-item"
+                            breakLinkClassName="page-link"
+                            containerClassName="pagination"
+                            activeClassName="active"
+                            // renderOnZeroPageCount={null}
+                    />)}
                     </div>
                   </div>
                 </div>
@@ -157,7 +228,7 @@ const Home = ({addtocart}) => {
                       </div>
                       <div className='detail'>
                         <div className='img_box'>
-                          <img src='image/T1.avif' alt='testmonial'></img>
+                          <img src='image/T1.avif' alt='testmonial' loading='lazy'></img>
                         </div>
                         <div className='info'>
                           <h3>Khai Tran</h3>
@@ -173,7 +244,7 @@ const Home = ({addtocart}) => {
                       <div className='form'>
                         <p>Trở thành khách hàng thân thiết</p>
                         <input type='email' placeholder='E-mail' autoComplete='off'></input>
-                        <button>subcribe</button>
+                        <button>Theo dõi</button>
                         <div className='icon_box'>
                           <div className='icon'>
                             <BiLogoFacebook />
@@ -198,15 +269,15 @@ const Home = ({addtocart}) => {
               <div className='container'>
                 <div className='left_box'>
                   <div className='box'>
-                    <img src='image/banner1.jpg' alt='banner'></img>
+                    <img src='image/banner1.jpg' alt='banner' loading='lazy'></img>
                   </div>
                   <div className='box'>
-                    <img src='image/Multi-Banner-2.jpg' alt='banner'></img>
+                    <img src='image/Multi-Banner-2.jpg' alt='banner' loading='lazy'></img>
                   </div>
                 </div>
                 <div className='right_box'>
                   <div className='box'>
-                    <img src='image/banner.jpg' alt=''></img>
+                    <img src='image/banner.jpg' alt='' loading='lazy'></img>
                   </div>
                 </div>
               </div>
@@ -215,22 +286,22 @@ const Home = ({addtocart}) => {
               <div className='container'>
                 <div className='box'>
                   <div className='header'>
-                    <h2>Sản phẩm mới</h2>
+                    <h2>Hãng Luxta</h2>
                   </div>
                   {
-                    newProduct.map((curElm) => 
+                    brandLuxta.slice(0, 4).map((curElm) => 
                   {
                     return(
                       <>
                       <div className='productbox'>
                         <div className='img-box'>
-                          <img src={curElm.image} alt=''></img>
+                          <img onClick={() => detailpage (curElm)} src={curElm.image} alt='' loading='lazy'></img>
                         </div>
                         <div className='detail'>
                           <h3>{curElm.Name}</h3>
                           <p>VND {curElm.price}</p>
                           <div className='icon'>
-                            <button><AiFillEye /></button>
+                            <button onClick={() => detailpage (curElm)}><AiFillEye /></button>
                             <button><AiFillHeart /></button>
                             <button onClick={() => addtocart (curElm)}><AiOutlineShoppingCart /></button>
                           </div>
@@ -243,22 +314,22 @@ const Home = ({addtocart}) => {
                 </div>
                 <div className='box'>
                   <div className='header'>
-                    <h2>Sản phẩm sắp ra mắt</h2>
+                    <h2>Hãng Inax </h2>
                   </div>
                   {
-                    featuredProduct.map((curElm) => 
+                    brandInax.slice(0, 4).map((curElm) => 
                     {
                       return(
                       <>
                         <div className='productbox'>
                           <div className='img-box'>
-                            <img src={curElm.image} alt=''></img>
+                            <img onClick={() => detailpage (curElm)} src={curElm.image} alt='' loading='lazy'></img>
                           </div>
                           <div className='detail'>
                             <h3>{curElm.Name}</h3>
                             <p>VND {curElm.price}</p>
                             <div className='icon'>
-                              <button><AiFillEye /></button>
+                              <button onClick={() => detailpage (curElm)}><AiFillEye /></button>
                               <button><AiFillHeart /></button>
                               <button onClick={() => addtocart (curElm)}><AiOutlineShoppingCart /></button>
                             </div>
@@ -271,22 +342,22 @@ const Home = ({addtocart}) => {
                 </div>
                 <div className='box'>
                   <div className='header'>
-                    <h2>Sản phẩm nổi bật</h2>
+                    <h2>Hãng TOTO</h2>
                   </div>
                   {
-                    topProduct.map((curElm) => 
+                    brandToto.slice(0, 4).map((curElm) => 
                     {
                       return(
                         <>
                         <div className='productbox'>
                           <div className='img-box'>
-                            <img src={curElm.image} alt=''></img>
+                            <img onClick={() => detailpage (curElm)} src={curElm.image} alt='' loading='lazy'></img>
                           </div>
                           <div className='detail'>
                             <h3>{curElm.Name}</h3>
                             <p>VND {curElm.price}</p>
                             <div className='icon'>
-                              <button><AiFillEye /></button>
+                              <button onClick={() => detailpage (curElm)}><AiFillEye /></button>
                               <button><AiFillHeart /></button>
                               <button onClick={() => addtocart (curElm)}><AiOutlineShoppingCart /></button>
                             </div>

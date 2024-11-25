@@ -4,7 +4,7 @@ import ReactPaginate from 'react-paginate'
 import { AiFillHeart, AiFillEye, AiOutlineClose} from 'react-icons/ai';
 import { useState, useEffect, useRef } from 'react'
 
-const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
+const Shop = ({shop, FilterCat, allcatefilter, FilterBrand, addtocart}) => {
     //Phân Trang
     const [currentPage, setCurrentPage] = useState(0); // Trang hiện tại
     const itemsPerPage = 20; // Số sản phẩm mỗi trang
@@ -66,13 +66,24 @@ const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
         <button className='close_btn' onClick={closedetail}><AiOutlineClose /></button>
             <div className='container'>
                 <div className='img_box'>
-                    <img src={detail.image} alt=''></img>
+                    <img src={detail.image1} alt=''></img>
                 </div>
                 <div className='info'>
                     {/* <h4># {detail.cat}</h4> */}
                     <h2>{detail.Name}</h2>
-                    <p>A Searchcreen Everyone Will Love: Whether your family is streaming or video chatting with friends tablet A8...</p>
-                    <h3>VND{detail.price}</h3>
+                    <div className="description">
+                        {detail.description.split('\n').map((line, index) => (
+                        <p key={index}>{line}</p>
+                        ))}
+                    </div>
+                    <div className="price">
+                        <span className="original-price">
+                            {detail.originalPrice.toLocaleString('vi-VN')} VNĐ
+                        </span>
+                        <span className="discount-price">
+                            {detail.discountPrice.toLocaleString('vi-VN')} VNĐ
+                        </span>
+                    </div>
                     <button onClick={() => addtocart (detail)}>Add To Cart</button>
                 </div>
             </div>
@@ -82,8 +93,8 @@ const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
     }
     
     <div className='shop'>
-        <h2># Shop</h2>
-        <p>Home . shop</p>
+        <h2># Cửa Hàng</h2>
+        <p>Cửa hàng thiết bị vệ sinh nội thất</p>
         <div className='container'>
             <div className='left_box'>
                 <div className='category'>
@@ -92,30 +103,46 @@ const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
                     </div>
                     <div className='box'>
                         <ul>
-                            <li onClick={() => allcatefilter ()}># All</li>
-                            <li onClick={() => Filter ("voi sen")}># Vòi Sen</li>
-                            <li onClick={() => Filter ("Guong den LED")}># Gương đèn LED</li>
-                            <li onClick={() => Filter ("LAVABO")}># Lavabo</li>
-                            <li onClick={() => Filter ("bon cau")}># Bồn Cầu</li>
-                            <li onClick={() => Filter ("chau chen")}># Chậu Chén</li>
-                            <li onClick={() => Filter ("chau chen")}># Bồn rửa chén</li>
+                            <li onClick={() => allcatefilter ()}># Tấc Cả Sản Phẩm</li>
+                            <li onClick={() => FilterCat ("chau chen")}># Chậu Rửa Chén</li>
+                            <li onClick={() => FilterCat ("voi sen dung")}># Vòi Sen Tắm Đứng</li>
+                            <li onClick={() => FilterCat ("voi sen tam")}># Vòi Sen Tắm</li>
+                            <li onClick={() => FilterCat ("tay sen")}># Tay Sen Tắm</li>
+                            <li onClick={() => FilterCat ("voi bep")}># Vòi Bếp</li>
+                            <li onClick={() => FilterCat ("voi ho")}># Vòi Hồ</li>
+                            <li onClick={() => FilterCat ("voi lavabo")}># Vòi Lavabo</li>
+                            <li onClick={() => FilterCat ("voi xit")}># Vòi Xịt</li>
+                            <li onClick={() => FilterCat ("xa tieu nam")}># Xã Tiểu Nam</li>
                         </ul>
                     </div>
                 </div>
                 <div className='banner'>
                     <div className='img_box'>
-                        <img src='image/shop_left.jpg' alt=''></img>
+                        <img src='image/shop_left.jpg' alt='' loading='lazy'></img>
+                    </div>
+                </div>
+                <div className='brand'>
+                    <div className='header'>
+                        <h3>Hãng sản xuất</h3>
+                    </div>
+                    <div className='box'>
+                        <ul>
+                            <li onClick={() => FilterBrand ("Luxta")}># Hãng Luxta</li>
+                            <li onClick={() => FilterBrand ("Inax")}># Hãng Inax</li>
+                            <li onClick={() => FilterBrand ("TOTO")}># Hãng TOTO</li>
+                            <li onClick={() => FilterBrand ("DaiThanh")}># Hãng Đại Thành</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div className='right_box'>
                 <div className='banner'>
                     <div className='img_box'>
-                        <img src='image/shop_right_top.jpg' alt=''></img>
+                        <img src='image/shop_right_top.jpg' alt='' loading='lazy'></img>
                     </div>
                 </div>
                 <div className='product_box'>
-                    <h2>Cửa hàng sản phẩm</h2>
+                    <h2>Cửa hàng thiết bị vệ sinh nội thất</h2>
                     <div className='product_container'>
                         {
                             currentData.length > 0?(
@@ -124,7 +151,7 @@ const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
                                     <>
                                     <div className='box'>
                                         <div className='img_box'>
-                                            <img src={curElm.image} alt=''></img>
+                                            <img onClick={() => detailpage (curElm)} src={curElm.image} alt='' loading='lazy'></img>
                                             <div className='icon'>
                                                 <li><AiFillHeart /></li>
                                                 <li onClick={() => detailpage (curElm)}><AiFillEye /></li>
@@ -132,7 +159,7 @@ const Shop = ({shop, Filter, allcatefilter, addtocart}) => {
                                         </div>
                                         <div className='detail'>
                                             <h3>{curElm.Name}</h3>
-                                            <p>VND {curElm.price}</p>
+                                            {/* <p>{curElm.price}</p> */}
                                             <button onClick={() => addtocart (curElm)}>Add To Cart</button>
                                         </div>
                                     </div>

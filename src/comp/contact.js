@@ -47,7 +47,7 @@ const Contact = () => {
     <div className='contact'>
         <div className='container'>
             <div className='form'>
-                <h2># Liên hệ chúng tôi</h2>
+                <h2># Thông tin của quý khách</h2>
                 <form method='POST'>
                     <div className='box'>
                         <div className='lable'>

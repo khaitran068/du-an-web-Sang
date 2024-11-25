@@ -13,7 +13,7 @@ const App = () => {
   //Shop Search Filter
   const [search, setSearch] = useState('')
   //Shop category filter
-  const Filter = (x) =>{
+  const FilterCat = (x) =>{
     const catefilter = Homeproduct.filter((product) =>
     {
       return product.cat === x;
@@ -24,6 +24,17 @@ const App = () => {
   const allcatefilter = () =>{
     setShop(Homeproduct)
   }
+
+  // Shop Search Filter Brand
+
+  const FilterBrand = (x) =>{
+    const brandfilter = Homeproduct.filter((product) =>
+    {
+      return product.brand === x;
+    })
+    setShop(brandfilter)
+  }
+
    //Shop Search Filter
 
    const searchlength = (search || []).length === 0
@@ -81,7 +92,7 @@ const addtocart = (product) =>
     <>
     <BrowserRouter>
     <Nav search={search} setSearch={setSearch} searchProduct={searchProduct} />
-    <Rout cart={cart} setCart={setCart} shop={shop} Filter = {Filter} allcatefilter={allcatefilter} addtocart={addtocart}></Rout>
+    <Rout cart={cart} setCart={setCart} shop={shop} FilterCat = {FilterCat} allcatefilter={allcatefilter} FilterBrand = {FilterBrand} addtocart={addtocart}></Rout>
     <Footer />
     </BrowserRouter>
     </>

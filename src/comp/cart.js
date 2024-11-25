@@ -44,17 +44,17 @@ const Cart = ({cart, setCart}) => {
       }
     }
     //Total Price
-  const total = cart.reduce((price, item) => price + item.qty * item.price, 0)
+  const total = cart.reduce((discountPrice, item) => discountPrice + item.qty * item.discountPrice, 0)
   return (
     <>
     <div className='cart'>
-      <h3># Cart</h3>
+      <h3># Thông tin đơn hàng</h3>
       {
         cart.length === 0 &&
         <>
         <div className='empty_cart'>
-          <h2>Your Shopping cart is empty</h2>
-          <Link to= '/shop'><button>Shop Now</button></Link>
+          <h2>Hiện tại Bạn chưa có đơn hàng nào</h2>
+          <Link to= '/cửa-hàng-thiết-bị-vệ-sinh-nội-thất'><button>Vào mua hàng</button></Link>
         </div>
         </>
       }
@@ -72,8 +72,8 @@ const Cart = ({cart, setCart}) => {
                   <div className='info'>
                      {/* <h4>{curElm.cat}</h4> */}
                     <h3>{curElm.Name}</h3>
-                    <p>Price: VND {curElm.price}</p>
-                    <p>Total: VND {curElm.price * curElm.qty}</p>
+                    <p>Price: {curElm.discountPrice} VNĐ</p>
+                    <p>Total: {curElm.discountPrice * curElm.qty} VNĐ</p>
                   </div>
                   <div className='quantity'>
                     <button onClick={() => incqty (curElm)}>+</button>
@@ -95,9 +95,9 @@ const Cart = ({cart, setCart}) => {
             cart.length > 0 && 
             <>
             <div className='Total'>
-              <h4>Sub Total: VND{total}</h4>
+              <h4>Sub Total: {total} VNĐ</h4>
             </div>
-            <button>checkout</button>
+            <button>Thanh toán</button>
             </>
           }
         </div>

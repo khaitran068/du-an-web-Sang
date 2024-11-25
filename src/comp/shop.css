@@ -104,6 +104,52 @@
     width: 100%;
     object-fit: cover;
 }
+.shop .container .left_box .brand
+{
+    border: 3px solid #f6f6f6;
+    width: 250px;
+    margin-top: 20px;
+}
+.shop .container .left_box .brand .header
+{
+    max-width: 100%;
+    padding: 10px 20px;
+    background: #f6f6f6;
+}
+.shop .container .left_box .brand .header h3
+{
+    font-size: 16px;
+    color: #232323;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.shop .container .left_box .brand .box
+{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+.shop .container .left_box .brand .box ul
+{
+    max-width: 100%;
+}
+.shop .container .left_box .brand .box ul li
+{
+    list-style: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8a8a8a;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.shop .container .left_box .brand .box ul li:hover
+{
+    color: #232323;
+}
 .shop .container .right_box .product_box
 {
     max-width: 100%;
@@ -165,7 +211,7 @@
 {
     padding: 10px 10px;
     width: 250px;
-    height: 390px;
+    height: 410px;
     overflow: hidden;
     border: 3px solid #f6f6f6;
     margin-left: 15px;
@@ -283,8 +329,8 @@
 }
 .product_detail .container .img_box img
 {
-    width: 270px;
-    height: 270px;
+    width: 400px;
+    height: 400px;
 }
 .product_detail .container .info
 {
@@ -302,18 +348,39 @@
 .product_detail .container .info h2
 {
     margin-top: 5px;
+    margin-bottom: 10px;
     color: #232323;
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 600;
 }
-.product_detail .container .info p
+/* .product_detail .container .info p
 {
     margin-top: 10px;
     color: #8a8a8a;
     font-size: 14px;
     letter-spacing: 1px;
     font-weight: 600;
+} */
+.product_detail .container .info .price
+{
+
+    display: flex;
+    flex-direction: column;
+}
+.product_detail .container .info .price .original-price
+{
+    text-decoration: line-through; /* Rạch ngang giá ban đầu */
+    color: #888; /* Màu xám cho giá gốc */
+    font-size: 14px; /* Font nhỏ hơn */
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.product_detail .container .info .price .discount-price
+{
+    color: #e74c3c; /* Màu đỏ nổi bật cho giá giảm */
+    font-weight: bold;
+    font-size: 16px;
 }
 .product_detail .container .info h3
 {
