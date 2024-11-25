@@ -272,7 +272,7 @@ const Home = ({addtocart}) => {
                     <img src='image/banner1.jpg' alt='banner' loading='lazy'></img>
                   </div>
                   <div className='box'>
-                    <img src='image/Multi-Banner-2.jpg' alt='banner' loading='lazy'></img>
+                    <img src='image/banner2.jpg' alt='banner' loading='lazy'></img>
                   </div>
                 </div>
                 <div className='right_box'>
