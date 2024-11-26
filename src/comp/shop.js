@@ -57,6 +57,22 @@ const Shop = ({shop, FilterCat, allcatefilter, FilterBrand, addtocart}) => {
         document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
+
+    // State để theo dõi hình ảnh hiện tại
+    const [currentImage, setCurrentImage] = useState(0);
+
+    // Danh sách hình ảnh
+    const images = [detail.image, detail.image1];
+
+    // Chuyển sang hình ảnh tiếp theo
+    const nextImage = () => {
+        setCurrentImage((prev) => (prev + 1) % images.length);
+    };
+
+    // Quay lại hình ảnh trước đó
+    const prevImage = () => {
+        setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
+    };
   return (
     <>
     {
@@ -66,25 +82,34 @@ const Shop = ({shop, FilterCat, allcatefilter, FilterBrand, addtocart}) => {
         <button className='close_btn' onClick={closedetail}><AiOutlineClose /></button>
             <div className='container'>
                 <div className='img_box'>
-                    <img src={detail.image1} alt=''></img>
+                    {/* Hiển thị hình ảnh hiện tại */}
+                    <img src={images[currentImage]} alt={detail.Name} className='main_image' loading='lazy' />
+
+                    {/* Nút điều hướng hình ảnh */}
+                    <button className='prev_btn' onClick={prevImage}>
+                    ❮
+                    </button>
+                    <button className='next_btn' onClick={nextImage}>
+                    ❯
+                    </button>
                 </div>
                 <div className='info'>
                     {/* <h4># {detail.cat}</h4> */}
                     <h2>{detail.Name}</h2>
-                    <div className="description">
+                    <div className='description'>
                         {detail.description.split('\n').map((line, index) => (
                         <p key={index}>{line}</p>
                         ))}
                     </div>
-                    <div className="price">
-                        <span className="original-price">
+                    <div className='price'>
+                        <span className='original-price'>
                             {detail.originalPrice.toLocaleString('vi-VN')} VNĐ
                         </span>
                         <span className="discount-price">
                             {detail.discountPrice.toLocaleString('vi-VN')} VNĐ
                         </span>
                     </div>
-                    <button onClick={() => addtocart (detail)}>Add To Cart</button>
+                    <button onClick={() => addtocart (detail)}>Mua hàng</button>
                 </div>
             </div>
         </div>
@@ -160,7 +185,7 @@ const Shop = ({shop, FilterCat, allcatefilter, FilterBrand, addtocart}) => {
                                         <div className='detail'>
                                             <h3>{curElm.Name}</h3>
                                             {/* <p>{curElm.price}</p> */}
-                                            <button onClick={() => addtocart (curElm)}>Add To Cart</button>
+                                            <button onClick={() => addtocart (curElm)}>Mua hàng</button>
                                         </div>
                                     </div>
                                     </>

@@ -30,16 +30,20 @@
 {
     max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 .shop .container .left_box
 {
     width: 25%;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 16px; */
 }
 .shop .container .left_box .category
 {
     border: 3px solid #f6f6f6;
-    width: 250px;
+    width: 70%;
 }
 .shop .container .left_box .category .header
 {
@@ -84,7 +88,7 @@
 .shop .container .left_box .banner
 {
     margin-top: 20px;
-    width: 250px;
+    width: 70%;
 }
 .shop .container .left_box .banner .img_box img
 {
@@ -107,7 +111,7 @@
 .shop .container .left_box .brand
 {
     border: 3px solid #f6f6f6;
-    width: 250px;
+    width: 70%;
     margin-top: 20px;
 }
 .shop .container .left_box .brand .header
@@ -295,11 +299,11 @@
 }
 .product_detail
 {
-    width: 1000px;
-    height: 600px;
+    width: 80%;
+    height: 90vh;
     position: fixed;
-    top: 40px;
-    left: 350px;
+    top: 5vh;
+    left: 12%;
     background: #ffff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border: 1px solid #f6f6f6;
@@ -326,7 +330,53 @@
     padding: 5px 5px;
     background: #f6f6f6;
     border-radius: 5px;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
 }
+.product_detail .container .img_box .main_image
+{
+    width: 100%; /* Đảm bảo ảnh lấp đầy chiều rộng khung */
+    height: 100%; /* Đảm bảo ảnh lấp đầy chiều cao khung */
+    /* object-fit: cover; Cắt ảnh sao cho vừa khít khung box */
+    object-position: center; /* Căn giữa ảnh trong khung */
+    border-radius: 8px;
+    position: absolute; /* Đảm bảo ảnh luôn ở trong box */
+    top: 0;
+    left: 0;
+}
+.product_detail .container .img_box .prev_btn,
+.product_detail .container .img_box .next_btn 
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    opacity: 0; /* Ẩn nút */
+    transition: opacity 0.3s ease;
+  }
+.product_detail .container .img_box .prev_btn 
+  {
+    left: 10px;
+  } 
+.product_detail .container .img_box .next_btn 
+  {
+    right: 10px;
+  }
+
+.product_detail .container .img_box:hover .prev_btn,
+.product_detail .container .img_box:hover .next_btn
+{
+      opacity: 1; /* Hiện nút */
+}
+  
 .product_detail .container .img_box img
 {
     width: 400px;

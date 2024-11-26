@@ -1178,7 +1178,7 @@ const Homeproduct =
         originalPrice: 1500000,
         discountPrice: 930000,
         image: 'image/L3222C_1.png',
-        image1: 'image/L3222C.png',
+        image1: 'image/L3222C.jpg',
         cat: 'voi bep',
         brand: 'Luxta',
         type: 'new',

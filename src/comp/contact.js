@@ -3,7 +3,7 @@ import './contact.css'
 const Contact = () => {
     const[user, setUser] = useState(
         {
-            Name:'', email:'', subject: '', Message: ''
+            Name:'', email:'', phone:'', subject: '', Message: ''
         }
     )
 
@@ -16,7 +16,7 @@ const Contact = () => {
     }
     const send = async (e) => 
         {
-            const {Name, email, subject, Message} = user
+            const {Name, email, phone, subject, Message} = user
             e.preventDefault()
             const option = {
                 method: 'POST',
@@ -24,7 +24,7 @@ const Contact = () => {
                     'Content-Type': 'aplication/json'
                 },
                 body: JSON.stringify({
-                    Name, email, subject, Message
+                    Name, email, phone, subject, Message
                 })
             }
     
@@ -51,10 +51,10 @@ const Contact = () => {
                 <form method='POST'>
                     <div className='box'>
                         <div className='lable'>
-                            <h4>Name</h4>
+                            <h4>Tên</h4>
                         </div>
                         <div className='input'>
-                            <input type='text' placeholder='Name' value= {user.Name} name='Name' onChange={data}></input>
+                            <input type='text' placeholder='Tên' value= {user.Name} name='Name' onChange={data}></input>
                         </div>
                     </div>
                     <div className='box'>
@@ -67,21 +67,29 @@ const Contact = () => {
                     </div>
                     <div className='box'>
                         <div className='lable'>
-                            <h4>Subject</h4>
+                            <h4>Điện thoại</h4>
                         </div>
                         <div className='input'>
-                            <input type='text' placeholder='Subject' value= {user.subject} name='subject' onChange={data}></input>
+                            <input type='text' placeholder='Phone' value={user.phone} name='phone' onChange={data}></input>
                         </div>
                     </div>
                     <div className='box'>
                         <div className='lable'>
-                            <h4>Messge</h4>
+                            <h4>Tiêu đề</h4>
                         </div>
                         <div className='input'>
-                            <textarea placeholder='Messge !' value= {user.Message} name='Message' onChange={data}></textarea>
+                            <input type='text' placeholder='Tiêu đề' value= {user.subject} name='subject' onChange={data}></input>
                         </div>
                     </div>
-                    <button type='submit' onClick={send}>Send</button>
+                    <div className='box'>
+                        <div className='lable'>
+                            <h4>Nội dung</h4>
+                        </div>
+                        <div className='input'>
+                            <textarea placeholder='Nội dung !' value= {user.Message} name='Message' onChange={data}></textarea>
+                        </div>
+                    </div>
+                    <button type='submit' onClick={send}>Gửi</button>
                 </form>
             </div>
         </div>

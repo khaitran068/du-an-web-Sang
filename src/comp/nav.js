@@ -23,7 +23,7 @@ const Nav = ({search, setSearch, searchProduct}) => {
                 <MdOutlineLocalShipping />
             </div>
             <div className='info'>
-                <p> Miễn phí giao hàng khi mua từ 3.000.000 VNĐ</p>
+                <p> Miễn phí giao hàng nội ô thành phố Cần Thơ</p>
             </div>
         </div>
         <div className='mid_header'>

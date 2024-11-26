@@ -4,6 +4,7 @@ import {BrowserRouter} from 'react-router-dom'
 import Rout from './comp/rout'
 import Footer from'./comp/footer'
 import Homeproduct from './comp/home_product'
+import PhoneButton from './comp/phone'
 
 const App = () => {
   // Add To cart
@@ -79,12 +80,12 @@ const addtocart = (product) =>
     })
     if(exist)
     {
-      alert("This product is alleardy added in cart")
+      alert("Sản phẩm này đã được thêm vào đơn hàng!")
     }
     else
     {
       setCart([...cart, {...product, qty:1}])
-      alert("Added To cart")
+      alert("Đã thêm sản phẩm vào đơn hàng")
     }
   }
    console.log(cart)
@@ -93,6 +94,7 @@ const addtocart = (product) =>
     <BrowserRouter>
     <Nav search={search} setSearch={setSearch} searchProduct={searchProduct} />
     <Rout cart={cart} setCart={setCart} shop={shop} FilterCat = {FilterCat} allcatefilter={allcatefilter} FilterBrand = {FilterBrand} addtocart={addtocart}></Rout>
+    <PhoneButton />
     <Footer />
     </BrowserRouter>
     </>

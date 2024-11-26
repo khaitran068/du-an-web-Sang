@@ -72,8 +72,8 @@ const Cart = ({cart, setCart}) => {
                   <div className='info'>
                      {/* <h4>{curElm.cat}</h4> */}
                     <h3>{curElm.Name}</h3>
-                    <p>Price: {curElm.discountPrice} VNĐ</p>
-                    <p>Total: {curElm.discountPrice * curElm.qty} VNĐ</p>
+                    <p>Price: {curElm.discountPrice.toLocaleString('vi-VN')} VNĐ</p>
+                    <p>Total: {(curElm.discountPrice * curElm.qty).toLocaleString('vi-VN')} VNĐ</p>
                   </div>
                   <div className='quantity'>
                     <button onClick={() => incqty (curElm)}>+</button>
@@ -95,7 +95,7 @@ const Cart = ({cart, setCart}) => {
             cart.length > 0 && 
             <>
             <div className='Total'>
-              <h4>Sub Total: {total} VNĐ</h4>
+              <h4>Sub Total: {total.toLocaleString('vi-VN')} VNĐ</h4>
             </div>
             <button>Thanh toán</button>
             </>
