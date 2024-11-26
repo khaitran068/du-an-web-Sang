@@ -8,6 +8,10 @@
 .home
 {
     width: 100%;
+    /* padding: 20px; Tạo khoảng cách cho nội dung */
+    display: flex;
+    flex-direction: column; /* Nội dung xếp dọc */
+    /* align-items: center; Căn giữa nội dung */
 }
 .home .banner
 {
@@ -289,10 +293,16 @@
 {
     padding: 10px 20px;
 }
-.home .trending .container .right_box .right_container .testimonial .detail .img_box img
+.home .trending .container .right_box .right_container .testimonial .detail .img_box
 {
-    margin-top: 40px;
-    margin-left: 80px;
+    display: flex;
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    margin-top: 20px; /* Giảm khoảng cách trên */
+}
+.home .trending .container .right_box .right_container .testimonial .detail .img_box img {
+    max-width: 100%; /* Hình ảnh không vượt quá chiều rộng khung chứa */
+    height: auto; /* Duy trì tỷ lệ ảnh */
 }
 .home .trending .container .right_box .right_container .testimonial .detail .info
 {
@@ -346,6 +356,7 @@
 .home .trending .container .right_box .right_container .newsletter .form
 {
     margin-top: 10px;
+    justify-content: center; /* Căn giữa nút bấm */
     width: 100%;
 }
 .home .trending .container .right_box .right_container .newsletter .form p
@@ -367,9 +378,11 @@
 }
 .home .trending .container .right_box .right_container .newsletter .form button
 {
-    margin-top: 10px;
-    margin-left: 90px;
-    padding: 10px 30px;
+    margin: 10px auto; /* Căn giữa theo chiều ngang */
+    padding: 10px 5%; /* Đệm động (5% chiều rộng khung) */
+    /* margin-top: 10px;
+    margin-left: 90px; */
+    /* padding: 10px 30px; */
     border: none;
     background: none;
     outline: none;
@@ -377,6 +390,8 @@
     color: #232323;
     font-weight: 600;
     cursor: pointer;
+    width: auto; /* Nút tự động điều chỉnh kích thước */
+    max-width: 100%; /* Giới hạn không vượt quá chiều rộng khung */
 }
 .home .trending .container .right_box .right_container .newsletter .form .icon_box
 {
@@ -517,4 +532,51 @@
 {
     background: #f6f6f6;
     color: #232323;
+}
+
+
+/* Màn hình nhỏ (điện thoại di động) */
+@media (max-width: 768px) {
+    .home {
+        padding: 10px; /* Giảm padding */
+    }
+
+    .home .trending .container {
+        flex-direction: column; /* Xếp chồng các phần tử thay vì xếp ngang */
+    }
+
+    .home .trending .container .left_box,
+    .home .trending .container .right_box {
+        width: 100%; /* Chiếm toàn bộ chiều ngang màn hình */
+    }
+
+    .home .trending .container .left_box .header .cate {
+        flex-wrap: wrap; /* Để các hạng mục xuống dòng nếu không đủ chỗ */
+        gap: 10px; /* Giảm khoảng cách giữa các hạng mục */
+    }
+
+    .home .trending .container .left_box .products .container .box {
+        width: 100%; /* Mỗi box chiếm toàn bộ chiều ngang màn hình */
+        margin: 10px 0; /* Tạo khoảng cách dọc giữa các box */
+    }
+
+    .home .banners .container {
+        flex-direction: column; /* Chuyển sang xếp dọc */
+    }
+
+    .home .banners .container .left_box,
+    .home .banners .container .right_box {
+        width: 100%; /* Điều chỉnh cho vừa màn hình nhỏ */
+    }
+
+    .home .product_type .container {
+        flex-direction: column; /* Chuyển các box sản phẩm thành cột */
+    }
+
+    .home .product_type .container .box {
+        width: 100%; /* Mỗi box chiếm toàn bộ chiều ngang */
+    }
+    .home .trending .container .right_box .right_container .newsletter .form button {
+        padding: 8px 10%; /* Điều chỉnh đệm cho màn hình nhỏ */
+    }
 }

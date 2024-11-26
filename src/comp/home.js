@@ -173,9 +173,6 @@ const Home = ({addtocart}) => {
         <div className='home'>
             <div className='banner'>
               <AutoBanner />
-                {/* <div className='contant'>
-                  <Link to='/cửa-hàng-thiết-bị-vệ-sinh-nội-thất' className='link'>Vào mua hàng</Link>
-                </div> */}
             </div>
             <div className='trending'>
               <div className='container'>
