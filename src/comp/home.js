@@ -13,7 +13,8 @@ const Home = ({addtocart}) => {
   // Product category
   const [brandLuxta, setBrandLuxta] =  useState([])
   const [brandInax, setBrandInax] =  useState([])
-  const [brandToto, setBrandToto] =  useState([])
+  const [brandHwata, setBrandHwata] =  useState([])
+  const [brandAriston, setBrandAriston] =  useState([])
 
   //phan trang
   const itemsPerPage = 16; // Số lượng sản phẩm trên mỗi trang
@@ -66,12 +67,18 @@ const Home = ({addtocart}) => {
       })
       setBrandInax(brandinax)
   
-      // Toto brand
-      const brandtoto = Homeproduct.filter((x) => 
+      // Hwata brand
+      const brandhwata= Homeproduct.filter((x) => 
       {
-        return x.brand === 'Toto'
+        return x.brand === 'Hwata'
       })
-      setBrandToto(brandtoto)
+      setBrandHwata(brandhwata)
+      // Ariston brand
+      const brandariston= Homeproduct.filter((x) => 
+        {
+          return x.brand === 'Ariston'
+        })
+        setBrandAriston(brandariston)
     }
     // trộn các phần tử trong mảng
     // function shuffleArray(array) {
@@ -126,6 +133,47 @@ const Home = ({addtocart}) => {
    const prevImage = () => {
        setCurrentImage((prev) => (prev - 1 + images.length) % images.length);
    };
+
+
+   // xuất hiện 4 brand và thay đổi sau 5 giây
+
+   const [startIndexes, setStartIndexes] = useState({
+    Luxta: 0,
+    Inax: 0,
+    Hwata: 0,
+    Ariston: 0
+  });
+
+  // Cập nhật startIndex sau mỗi 5 giây
+  useEffect(() => {
+      const interval = setInterval(() => {
+          setStartIndexes((prevIndexes) => ({
+              Luxta: (prevIndexes.Luxta + 4) % brandLuxta.length,
+              Inax: (prevIndexes.Inax + 4) % brandInax.length,
+              Hwata: (prevIndexes.Hwata + 4) % brandHwata.length,
+              Ariston: (prevIndexes.Ariston + 4) % brandAriston.length
+          }));
+      }, 5000); // Cập nhật mỗi 5 giây
+
+      return () => clearInterval(interval);
+  }, [brandLuxta.length, brandInax.length, brandHwata.length, brandAriston.length]);
+
+  // Lấy 4 sản phẩm từ mỗi thương hiệu
+  const getDisplayedProducts = (brand, startIndex) => {
+      const brandProducts = brand.slice(startIndex, startIndex + 4);
+      if (brandProducts.length < 4) {
+          // Nếu không đủ 4 sản phẩm, nối thêm sản phẩm từ đầu
+          return [...brandProducts, ...brand.slice(0, 4 - brandProducts.length)];
+      }
+      return brandProducts;
+  };
+
+  // Hiển thị các sản phẩm cho từng brand
+  const displayedProductsLuxta = getDisplayedProducts(brandLuxta, startIndexes.Luxta);
+  const displayedProductsInax = getDisplayedProducts(brandInax, startIndexes.Inax);
+  const displayedProductsHwata = getDisplayedProducts(brandHwata, startIndexes.Hwata);
+  const displayedProductsAriston = getDisplayedProducts(brandAriston, startIndexes.Ariston);
+
 
   return (
     <>
@@ -311,7 +359,7 @@ const Home = ({addtocart}) => {
                     <h2>Hãng Luxta</h2>
                   </div>
                   {
-                    brandLuxta.slice(0, 4).map((curElm) => 
+                    displayedProductsLuxta.map((curElm) => 
                   {
                     return(
                       <>
@@ -339,7 +387,7 @@ const Home = ({addtocart}) => {
                     <h2>Hãng Inax </h2>
                   </div>
                   {
-                    brandInax.slice(0, 4).map((curElm) => 
+                    displayedProductsInax.map((curElm, index) => 
                     {
                       return(
                       <>
@@ -367,7 +415,7 @@ const Home = ({addtocart}) => {
                     <h2>Hãng HWATA</h2>
                   </div>
                   {
-                    brandToto.slice(0, 4).map((curElm) => 
+                    displayedProductsHwata.map((curElm) => 
                     {
                       return(
                         <>
@@ -395,7 +443,7 @@ const Home = ({addtocart}) => {
                     <h2>Hãng ARISTON</h2>
                   </div>
                   {
-                    brandToto.slice(0, 4).map((curElm) => 
+                    displayedProductsAriston.map((curElm) => 
                     {
                       return(
                         <>

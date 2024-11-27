@@ -141,9 +141,18 @@
         border-right: none; /* Bỏ đường viền giữa 2 box */
         margin-bottom: 20px; /* Tạo khoảng cách dưới cho phần này */
     }
+    .footer .container .left-box .box .detail h3
+    {
+        font-size: 14px;
+    }
+    .footer .container .left-box .box .detail p
+    {
+        font-size: 12px;
+    }
 
     .footer .container .right_box {
         width: 100%; /* Chiếm toàn bộ chiều rộng trên điện thoại */
+        justify-content: center;
     }
 
     .footer .container .right_box .header img {
@@ -161,7 +170,37 @@
         text-align: center; /* Canh giữa các nội dung */
     }
 
+
+    .footer .container .right_box .header
+    {
+        max-width: 100%;
+        align-items: center;
+    }
+    .footer .container .right_box .header img
+    {
+        margin-left: 35%;
+        width: 55px;
+        height: 55px;
+
+    }
+    .footer .container .right_box .header p
+    {
+        margin-top: 10px;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 600;
+        color: #8a8a8a;
+    }
+    .footer .container .right_box .bottom
+    {
+        padding: 10px 10px;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .footer .container .right_box .bottom .box ul li {
-        font-size: 14px; /* Tăng kích thước font cho dễ đọc trên điện thoại */
+        font-size: 12px; /* Tăng kích thước font cho dễ đọc trên điện thoại */
     }
 }

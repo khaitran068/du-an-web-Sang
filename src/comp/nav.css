@@ -185,6 +185,8 @@
         /* flex-direction: column; Chuyển sang hàng dọc */
         align-items: center;
         padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .header .mid_header .logo img {
@@ -192,18 +194,23 @@
     }
 
     .header .mid_header .search_box input {
-        width: 85%; /* Đảm bảo input chiếm toàn bộ chiều rộng */
+        width: 80%; /* Đảm bảo input chiếm toàn bộ chiều rộng */
         margin-bottom: 10px;
     }
 
     .header .mid_header .search_box button {
-        width: 15%; /* Đặt nút ở cùng chiều rộng với input */
+        width: 20%; /* Đặt nút ở cùng chiều rộng với input */
         margin-right: 0px;
     }
 
     .header .mid_header .user {
         margin-right: 0px;
+        font-size: 14px;
         justify-content: center;
+    }
+    .header .mid_header .user .btn button
+    {
+        font-size: 14px;
     }
 
     .header .last_header {
@@ -218,7 +225,7 @@
     }
 
     .header .last_header .user_profile .info h2 {
-        font-size: 16px; /* Giảm kích thước chữ */
+        font-size: 12px; /* Giảm kích thước chữ */
     }
 
     .header .last_header .user_profile .info p {
@@ -233,16 +240,18 @@
     .header .last_header .nav ul li .link {
         margin-right: 0;
         margin-bottom: 10px; /* Thêm khoảng cách giữa các link */
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .header .last_header .offer {
         width: 30%; /* Chiếm toàn bộ chiều ngang */
         margin-bottom: 10px;
         margin-right: 5px; /* Thêm khoảng cách với thành phần dưới */
+        padding: 10px 10px;
     }
 
     .header .last_header .offer p {
         font-size: 12px;
+        text-transform: uppercase;
     }
 }

@@ -229,6 +229,7 @@
 {
     width:100%;
     height: 270px;
+    object-fit: contain;  /*đảm bảo ảnh luôn nằm trong khung bõ */
 }
 .shop .container .right_box .product_box .product_container .box .img_box .icon
 {
@@ -469,9 +470,23 @@
         margin-left: 0;
     }
 
-    .shop .container .right_box .product_box .product_container .box .detail button
+    /* .shop .container .right_box .product_box .product_container .box .detail button
     {
         justify-content: center;
+    } */
+
+    .shop .container .right_box .product_box .product_container .box .detail button
+    {
+        margin-top: 10px;
+        margin-left: 20%;
+        padding: 10px 10px;
+        border: none;
+        outline: none;
+        color: #232323;
+        background: #fed700;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.5s;
     }
     .shop .container .right_box .product_box .product_container .box .detail h3
     {
