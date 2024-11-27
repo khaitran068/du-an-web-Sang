@@ -115,3 +115,53 @@
 {
     color: #cd1e76;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 10px; /* Giảm padding trên màn hình nhỏ hơn */
+    }
+
+    .footer .container .left-box {
+        padding: 5px; /* Giảm padding của box */
+    }
+
+    .footer .container .left-box .box {
+        padding: 5px 10px; /* Giảm padding cho box bên trái */
+    }
+
+    .footer .container .right_box .bottom {
+        padding: 10px;
+    }
+
+    .footer .container .right_box .bottom .box ul li {
+        font-size: 12px; /* Tăng font size cho dễ đọc */
+    }
+    .footer .container .left-box {
+        width: 100%; /* Chiếm toàn bộ chiều rộng trên điện thoại */
+        border-right: none; /* Bỏ đường viền giữa 2 box */
+        margin-bottom: 20px; /* Tạo khoảng cách dưới cho phần này */
+    }
+
+    .footer .container .right_box {
+        width: 100%; /* Chiếm toàn bộ chiều rộng trên điện thoại */
+    }
+
+    .footer .container .right_box .header img {
+        width: 50px; /* Giảm kích thước hình ảnh logo */
+        height: 50px;
+    }
+
+    .footer .container .right_box .bottom {
+        flex-direction: column; /* Chuyển layout thành cột trên điện thoại */
+        align-items: center;
+    }
+
+    .footer .container .right_box .bottom .box {
+        width: 100%; /* Đảm bảo các phần tử chiếm toàn bộ chiều rộng */
+        text-align: center; /* Canh giữa các nội dung */
+    }
+
+    .footer .container .right_box .bottom .box ul li {
+        font-size: 14px; /* Tăng kích thước font cho dễ đọc trên điện thoại */
+    }
+}

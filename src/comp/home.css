@@ -8,10 +8,6 @@
 .home
 {
     width: 100%;
-    /* padding: 20px; Tạo khoảng cách cho nội dung */
-    display: flex;
-    flex-direction: column; /* Nội dung xếp dọc */
-    /* align-items: center; Căn giữa nội dung */
 }
 .home .banner
 {
@@ -293,14 +289,14 @@
 {
     padding: 10px 20px;
 }
-.home .trending .container .right_box .right_container .testimonial .detail .img_box
-{
+.home .trending .container .right_box .right_container .testimonial .detail .img_box {
     display: flex;
     justify-content: center; /* Canh giữa theo chiều ngang */
     align-items: center; /* Canh giữa theo chiều dọc */
     margin-top: 20px; /* Giảm khoảng cách trên */
 }
-.home .trending .container .right_box .right_container .testimonial .detail .img_box img {
+.home .trending .container .right_box .right_container .testimonial .detail .img_box img
+{
     max-width: 100%; /* Hình ảnh không vượt quá chiều rộng khung chứa */
     height: auto; /* Duy trì tỷ lệ ảnh */
 }
@@ -356,7 +352,6 @@
 .home .trending .container .right_box .right_container .newsletter .form
 {
     margin-top: 10px;
-    justify-content: center; /* Căn giữa nút bấm */
     width: 100%;
 }
 .home .trending .container .right_box .right_container .newsletter .form p
@@ -380,12 +375,7 @@
 {
     margin: 10px auto; /* Căn giữa theo chiều ngang */
     padding: 10px 5%; /* Đệm động (5% chiều rộng khung) */
-    /* margin-top: 10px;
-    margin-left: 90px; */
-    /* padding: 10px 30px; */
     border: none;
-    background: none;
-    outline: none;
     background: #fed700;
     color: #232323;
     font-weight: 600;
@@ -419,6 +409,7 @@
 {
     padding: 20px 30px;
     width: 100%;
+    box-sizing: border-box; /* Đảm bảo padding không làm ảnh hưởng đến kích thước */
 }
 .home .banners .container
 {
@@ -427,6 +418,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0px;      
+    overflow: hidden;
 }
 .home .banners .container .left_box
 {
@@ -434,7 +426,7 @@
 }
 .home .banners .container .right_box
 {
-    width: 75%;
+    width: 74%;
 }
 .home .banners .container .right_box .container
 {
@@ -443,6 +435,7 @@
 .home .banners .container .right_box .container img
 {
     width: 100%;
+    height: auto;
     object-fit: cover;
 }
 .home .product_type
@@ -454,14 +447,24 @@
 {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 .home .product_type .container .box
 {
-    width: 430px;
+    min-width: 300px;
+    /* max-width: 400px; */
     height: 580px;
     border: 3px solid #f6f7f8;
     overflow: hidden;
+
+    flex: 1;
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
 }
 .home .product_type .container .box .header
 {
@@ -484,16 +487,21 @@
     padding: 10px 20px;
     border: 1px solid #f6f7f8;
     display: flex;
+
+
+    gap: 10px;
+    
 }
 .home .product_type .container .box .productbox .img-box img
 {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 .home .product_type .container .box .productbox .detail
 {
-    margin-left: 90px;
+    margin-left: 20%;
+    text-align: center;
 }
 .home .product_type .container .box .productbox .detail h3
 {
@@ -512,8 +520,12 @@
 }
 .home .product_type .container .box .productbox .detail .icon
 {
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
+
+
+    justify-content: center;
+    gap: 5px;
 }
 .home .product_type .container .box .productbox .detail .icon button
 {
@@ -534,49 +546,154 @@
     color: #232323;
 }
 
-
-/* Màn hình nhỏ (điện thoại di động) */
+/* Thiết lập responsive cho điện thoại */
 @media (max-width: 768px) {
-    .home {
-        padding: 10px; /* Giảm padding */
+    .home .banner {
+        height: auto; /* Để hình banner tự động điều chỉnh */
+        padding: 5px 0;
     }
 
     .home .trending .container {
-        flex-direction: column; /* Xếp chồng các phần tử thay vì xếp ngang */
+        display: flex;
+        flex-wrap: wrap; /* Cho phép các phần tử con xuống dòng khi không đủ không gian */
+        gap: 20px; /* Tạo khoảng cách giữa các phần tử */
     }
 
-    .home .trending .container .left_box,
-    .home .trending .container .right_box {
-        width: 100%; /* Chiếm toàn bộ chiều ngang màn hình */
+    .home .trending .container .left_box {
+        flex: 1; /* Chiếm toàn bộ không gian còn lại */
+        display: flex;
+        flex-wrap: wrap; /* Cho phép các sản phẩm xuống dòng */
+        gap: 10px; /* Khoảng cách giữa các sản phẩm */
     }
-
-    .home .trending .container .left_box .header .cate {
-        flex-wrap: wrap; /* Để các hạng mục xuống dòng nếu không đủ chỗ */
-        gap: 10px; /* Giảm khoảng cách giữa các hạng mục */
+    .home .trending .container .left_box .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px; /* Khoảng cách giữa các sản phẩm */
+        width: 100%;
+    }
+    .home .trending .container .right_box
+    {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0%;
+        display: block; /* Đảm bảo nằm độc lập trên một dòng */
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        margin-top: 0px; /* Khoảng cách so với phần tử trên */
+        flex-basis: 300px; /* Đặt chiều rộng cố định cho `right_box` */
+        flex-shrink: 0; /* Không cho phép `right_box` co lại */
+    }
+    .home .trending .container .left_box .products .container {
+        display: flex; /* Chuyển sang layout dạng flexbox */
+        flex-wrap: wrap; /* Cho phép các sản phẩm xuống hàng khi không đủ không gian */
+        justify-content: space-between; /* Tạo khoảng cách đều giữa các sản phẩm */
     }
 
     .home .trending .container .left_box .products .container .box {
-        width: 100%; /* Mỗi box chiếm toàn bộ chiều ngang màn hình */
-        margin: 10px 0; /* Tạo khoảng cách dọc giữa các box */
+        width: calc(50% - 10px); /* Mỗi sản phẩm chiếm 50% trừ đi khoảng cách giữa các hộp */
+        height: auto; /* Tự động điều chỉnh chiều cao */
+        margin: 5px 0; /* Tạo khoảng cách dọc giữa các sản phẩm */
+        box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến chiều rộng */
+    }
+
+    .home .trending .container .left_box .products .container .box .img_box
+    {
+        display: flex;
+        /* object-fit: contain; */
+    }
+    .home .trending .container .left_box .products .container .box .img_box img
+    {
+        /* width: 245px;
+        height: 215px; */
+        max-width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng khung */
+        max-height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao khung */
+        object-fit: contain; /* Đảm bảo ảnh giữ nguyên tỉ lệ */
+    }
+
+    .home .trending .container .left_box .products button {
+        margin: 20px auto; /* Đặt nút giữa màn hình */
+    }
+    .home .trending .container .right_box .right_container {
+        margin-top: 20px; /* Tạo khoảng cách giữa các mục */
+        align-items: center;
+        margin-top: 0;
     }
 
     .home .banners .container {
-        flex-direction: column; /* Chuyển sang xếp dọc */
+        display: flex;
     }
-
     .home .banners .container .left_box,
     .home .banners .container .right_box {
-        width: 100%; /* Điều chỉnh cho vừa màn hình nhỏ */
+        max-width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng khung */
+        max-height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao khung */
+        object-fit: contain; /* Đảm bảo ảnh giữ nguyên tỉ lệ */
     }
 
     .home .product_type .container {
-        flex-direction: column; /* Chuyển các box sản phẩm thành cột */
+        /* flex-direction: column; */
+        flex-wrap: wrap; /* Cho phép các sản phẩm xuống hàng khi không đủ không gian */
+        justify-content: space-between; /* Tạo khoảng cách đều giữa các sản phẩm */
     }
 
     .home .product_type .container .box {
-        width: 100%; /* Mỗi box chiếm toàn bộ chiều ngang */
+        min-width: none;
+        width: calc(50% - 10px);
+        height: 100%; /* Tự động điều chỉnh chiều cao */
     }
-    .home .trending .container .right_box .right_container .newsletter .form button {
-        padding: 8px 10%; /* Điều chỉnh đệm cho màn hình nhỏ */
+    .home .product_type .container .box .header {
+        width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+        height: 100%; /* Tự động điều chỉnh chiều cao */
+    }
+    .home .product_type .container .box .header h2
+    {
+        color: #232323;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .home .product_type .container .box .productbox {
+        gap: 1px;
+        align-items: center; /* Căn giữa các mục */
+        max-width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng khung */
+        max-height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao khung */
+        
+    }
+    .home .product_type .container .box .productbox .img-box {
+        max-width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng khung */
+        max-height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao khung */
+        margin-top: 0;
+    }
+    .home .product_type .container .box .productbox .img-box img {
+        max-width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng khung */
+        max-height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao khung */
+        object-fit: contain; /* Đảm bảo ảnh giữ nguyên tỉ lệ */
+    }
+
+    .home .product_type .container .box .productbox .detail {
+        margin-left: 0; /* Xóa khoảng cách bên trái */
+        text-align: center; /* Căn giữa nội dung văn bản */
+        max-width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng khung */
+        max-height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao khung */
+        object-fit: contain; /* Đảm bảo ảnh giữ nguyên tỉ lệ */
+    }
+
+    .home .product_type .container .box .productbox .detail h3
+    {
+        font-size: 10px;
+        color: #8a8a8a;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    .home .product_type .container .box .productbox .detail .icon
+    {
+        margin-top: 20px;
+         
+    }
+
+    .home .trending .container .left_box .products .paginate {
+        flex-wrap: wrap; /* Cho phép các nút phân trang xuống hàng nếu không đủ chỗ */
+        margin-bottom: 0;
     }
 }
+

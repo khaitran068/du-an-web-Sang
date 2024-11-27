@@ -321,7 +321,7 @@ const Home = ({addtocart}) => {
                         </div>
                         <div className='detail'>
                           <h3>{curElm.Name}</h3>
-                          <p>VND {curElm.price}</p>
+                          {/* <p>VND {curElm.price}</p> */}
                           <div className='icon'>
                             <button onClick={() => detailpage (curElm)}><AiFillEye /></button>
                             <button><AiFillHeart /></button>
@@ -349,7 +349,7 @@ const Home = ({addtocart}) => {
                           </div>
                           <div className='detail'>
                             <h3>{curElm.Name}</h3>
-                            <p>VND {curElm.price}</p>
+                            {/* <p>VND {curElm.price}</p> */}
                             <div className='icon'>
                               <button onClick={() => detailpage (curElm)}><AiFillEye /></button>
                               <button><AiFillHeart /></button>
@@ -364,7 +364,7 @@ const Home = ({addtocart}) => {
                 </div>
                 <div className='box'>
                   <div className='header'>
-                    <h2>Hãng TOTO</h2>
+                    <h2>Hãng HWATA</h2>
                   </div>
                   {
                     brandToto.slice(0, 4).map((curElm) => 
@@ -377,7 +377,35 @@ const Home = ({addtocart}) => {
                           </div>
                           <div className='detail'>
                             <h3>{curElm.Name}</h3>
-                            <p>VND {curElm.price}</p>
+                            {/* <p>VND {curElm.price}</p> */}
+                            <div className='icon'>
+                              <button onClick={() => detailpage (curElm)}><AiFillEye /></button>
+                              <button><AiFillHeart /></button>
+                              <button onClick={() => addtocart (curElm)}><AiOutlineShoppingCart /></button>
+                            </div>
+                          </div>
+                        </div>
+                        </>
+                      )
+                    })
+                  }
+                </div>
+                <div className='box'>
+                  <div className='header'>
+                    <h2>Hãng ARISTON</h2>
+                  </div>
+                  {
+                    brandToto.slice(0, 4).map((curElm) => 
+                    {
+                      return(
+                        <>
+                        <div className='productbox'>
+                          <div className='img-box'>
+                            <img onClick={() => detailpage (curElm)} src={curElm.image} alt='' loading='lazy'></img>
+                          </div>
+                          <div className='detail'>
+                            <h3>{curElm.Name}</h3>
+                            {/* <p>VND {curElm.price}</p> */}
                             <div className='icon'>
                               <button onClick={() => detailpage (curElm)}><AiFillEye /></button>
                               <button><AiFillHeart /></button>

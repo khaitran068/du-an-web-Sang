@@ -166,3 +166,49 @@
     margin-top: 20px;
     cursor: pointer;
 }
+
+/* CSS dành riêng cho giao diện điện thoại */
+@media only screen and (max-width: 768px) {
+    .cart {
+        padding: 10px; /* Giảm padding */
+    }
+
+    .cart h3 {
+        font-size: 24px; /* Giảm kích thước font tiêu đề */
+    }
+
+    .cart .empty_cart button {
+        margin: 10px auto; /* Canh giữa nút */
+        display: block;
+    }
+
+    .cart .container .box {
+        flex-direction: column; /* Chuyển sang dạng dọc */
+        height: auto; /* Tự động điều chỉnh chiều cao */
+    }
+
+    .cart .container .box .img_box img {
+        width: 100%; /* Hình ảnh chiếm toàn chiều ngang */
+        height: auto;
+    }
+
+    .cart .container .box .detail {
+        flex-direction: column; /* Canh dọc chi tiết sản phẩm */
+        margin: 10px 0;
+    }
+
+    .cart .container .box .detail .info,
+    .cart .container .box .detail .quantity,
+    .cart .container .box .detail .icon {
+        margin: 0 auto; /* Canh giữa */
+        text-align: center; /* Canh chữ */
+    }
+
+    .cart .bottom {
+        margin: 20px 10px;
+    }
+
+    .cart .bottom button {
+        width: 100%; /* Chiếm toàn chiều ngang */
+    }
+}
