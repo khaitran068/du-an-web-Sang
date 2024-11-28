@@ -8,7 +8,7 @@ import AutoBanner from './banner';
 import { AiFillEye, AiFillHeart, AiOutlineShoppingCart, AiOutlineClose} from "react-icons/ai";
 import {BiLogoFacebook, BiLogoTwitter, BiLogoInstagram, BiLogoYoutube} from "react-icons/bi";
 
-const Home = ({addtocart}) => {
+const Home = ({addtocart, shop, FilterType, allcatefilter}) => {
 
   // Product category
   const [brandLuxta, setBrandLuxta] =  useState([])
@@ -19,7 +19,12 @@ const Home = ({addtocart}) => {
   //phan trang
   const itemsPerPage = 16; // Số lượng sản phẩm trên mỗi trang
   const [currentPage, setCurrentPage] = useState(0);
-  const [product, setProduct] = useState(Homeproduct)
+
+   // Reset currentPage về 0 khi shop thay đổi
+   useEffect(() => {
+    setCurrentPage(0);
+  }, [shop]);
+
 
   const handlePageClick = (event) =>{
     setCurrentPage(event.selected);
@@ -27,24 +32,8 @@ const Home = ({addtocart}) => {
 
   //hien thi cho san pham hien tai
   const offset = currentPage * itemsPerPage;
-  const currentProducts = product.slice(offset, offset + itemsPerPage);
-  const pageCount = Math.ceil(product.length / itemsPerPage);
-  // Filter of tranding product
-  const filtercate = (x) => 
-    {
-      const filterproduct = Homeproduct.filter((curElm) => 
-      {
-        return curElm.type === x
-      })
-      setProduct(filterproduct)
-      setCurrentPage(0);
-    }
-     //All Trending Product
-  const allTrendingProduct = () =>
-    {
-      setProduct(Homeproduct);
-      setCurrentPage(0);
-    }
+  const currentProducts = shop.slice(offset, offset + itemsPerPage);
+  const pageCount = Math.ceil(shop.length / itemsPerPage);
 
   //Product Type
   useEffect(() => 
@@ -60,7 +49,7 @@ const Home = ({addtocart}) => {
       })
       setBrandLuxta(brandluxta)
   
-      // Inax brand
+      // Dai Thanh brand
       const branddaithanh = Homeproduct.filter((x) => 
       {
         return x.brand === 'DaiThanh'
@@ -227,12 +216,12 @@ const Home = ({addtocart}) => {
                 <div className='left_box'>
                   <div className='header'>
                     <div className='heading'>
-                      <h2 onClick={() => allTrendingProduct ()}>Sản phẩm bán chạy</h2>
+                      <h2 onClick={() => allcatefilter ()}>Sản phẩm bán chạy</h2>
                     </div>
                     <div className='cate'>
-                      <h3 onClick={() => filtercate ('new')}>Sản phẩm mới</h3>
-                      <h3 onClick={() => filtercate ('featured')}>Sản phẩm sắp về</h3>
-                      <h3 onClick={() => filtercate ('top')}>Sản phẩm giảm giá</h3>
+                      <h3 onClick={() => FilterType ('new')}>Sản phẩm mới</h3>
+                      <h3 onClick={() => FilterType ('featured')}>Sản phẩm sắp về</h3>
+                      <h3 onClick={() => FilterType ('top')}>Sản phẩm giảm giá</h3>
                     </div>
                   </div>
                   <div className='products'>

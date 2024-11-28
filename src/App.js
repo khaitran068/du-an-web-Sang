@@ -13,6 +13,17 @@ const App = () => {
   const [shop, setShop] = useState(Homeproduct)
   //Shop Search Filter
   const [search, setSearch] = useState('')
+
+  //shop Type filter
+  const FilterType = (x) =>{
+    const typefilter = Homeproduct.filter((product) =>
+    {
+      return product.type ===x;
+    })
+    setShop(typefilter)
+  }
+
+
   //Shop category filter
   const FilterCat = (x) =>{
     const catefilter = Homeproduct.filter((product) =>
@@ -93,7 +104,7 @@ const addtocart = (product) =>
     <>
     <BrowserRouter>
     <Nav search={search} setSearch={setSearch} searchProduct={searchProduct} />
-    <Rout cart={cart} setCart={setCart} shop={shop} FilterCat = {FilterCat} allcatefilter={allcatefilter} FilterBrand = {FilterBrand} addtocart={addtocart}></Rout>
+    <Rout cart={cart} setCart={setCart} shop={shop} FilterCat = {FilterCat} allcatefilter={allcatefilter} FilterBrand = {FilterBrand} FilterType={FilterType} addtocart={addtocart}></Rout>
     <PhoneButton />
     <Footer />
     </BrowserRouter>
