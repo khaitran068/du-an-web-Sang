@@ -1430,8 +1430,8 @@ const Homeproduct =
     {
         id: 89,
         Name: 'Vòi Lavabo Lạnh Luxta L1101X3',
-        originalPrice: 12000,
-        discountPrice: 12000,
+        originalPrice: 1000,
+        discountPrice: 1000,
         image: 'image/L1101X3_1.png',
         image1: 'image/L1101X3.png',
         cat: 'voi lavabo',
@@ -1447,8 +1447,8 @@ const Homeproduct =
     {
         id: 90,
         Name: 'Vòi Lavabo Lạnh Luxta L1102D',
-        originalPrice: 12000,
-        discountPrice: 12000,
+        originalPrice: 1000,
+        discountPrice: 1000,
         image: 'image/L1102D_1.png',
         image1: 'image/L1102D.png',
         cat: 'voi lavabo',
@@ -1949,8 +1949,8 @@ const Homeproduct =
     {
         id: 120,
         Name: 'Vòi Xịt Luxta L5111',
-        originalPrice: 12000,
-        discountPrice: 12000,
+        originalPrice: 1000,
+        discountPrice: 1000,
         image: 'image/L5111.png',
         image1: 'image/L5111.png',
         cat: 'voi xit',
@@ -2029,6 +2029,1427 @@ const Homeproduct =
         ✔ Chống bám bẩn tối ưu
         ✔ Giảm sử dụng chất tẩy rửa`,
     },
+    {
+        id: 125,
+        Name: 'Bồn nước inox Hwata 500 lít nằm 304',
+        originalPrice: 2783000,
+        discountPrice: 2155000,
+        image: 'image/bon-nuoc-inox-hwata-500-lit-nam-304-500l.jpg',
+        image1: 'image/bon-nuoc-inox-hwata-500-lit-nam-304-500l.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~500 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1220 mm
+        Chiều rộng chân	~760 mm
+        Tổng cao bồn	~920 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 126,
+        Name: 'Bồn nước inox Hwata 1500 lít đứng 1500l',
+        originalPrice: 5567000,
+        discountPrice: 4295000,
+        image: 'image/son-ha-sg-bon-inox-dung-1500l.jpg',
+        image1: 'image/son-ha-sg-bon-inox-dung-1500l.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Thân bồn I304, Chân thép không rỉ
+        Thể tích	~1500 lít
+        Độ dày	0,6 mm (6 zem)
+        Phụ kiện kèm theo	Chân bồn, pass cố định bồn, phiếu bảo hành
+        Đường kính thân	~1160 mm
+        Chiều cao cả chân	~1750 mm
+        Chiều rộng chân	~1170 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 127,
+        Name: 'Bồn nước inox Hwata 310 lít đứng 310l-630mm',
+        originalPrice: 2088000,
+        discountPrice: 1625000,
+        image: 'image/son-ha-sg-bon-inox-dung-310l-duong-kinh-630mm.jpg',
+        image1: 'image/son-ha-sg-bon-inox-dung-310l-duong-kinh-630mm.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Thân bồn I304, Chân thép không rỉ
+        Thể tích	~300 lít
+        Độ dày	0,5mm (5 zem)
+        Phụ kiện kèm theo	Chân bồn, pass cố định bồn, phiếu bảo hành
+        Đường kính thân	~630 mm
+        Chiều cao cả chân	~1440 mm
+        Chiều rộng chân	~640 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 128,
+        Name: 'Bồn nước inox Hwata 300 lít nằm 304-300l',
+        originalPrice: 2325000,
+        discountPrice: 1805000,
+        image: 'image/bon-nuoc-inox-hwata-300-lit-nam-304-300l.jpg',
+        image1: 'image/bon-nuoc-inox-hwata-300-lit-nam-304-300l.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~300 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1220 mm
+        Chiều rộng chân	~630 mm
+        Tổng cao bồn	~770 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 129,
+        Name: 'Bồn nước inox Hwata 500 lít đứng 500l',
+        originalPrice: 2547000,
+        discountPrice: 1975000,
+        image: 'image/son-ha-sg-bon-inox-dung-500l.jpg',
+        image1: 'image/son-ha-sg-bon-inox-dung-500l.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Thân bồn I304, Chân thép không rỉ
+        Thể tích	~500 lít
+        Độ dày	0,5mm (5 zem)
+        Phụ kiện kèm theo	Chân bồn, pass cố định bồn, phiếu bảo hành
+        Đường kính thân	~760 mm
+        Chiều cao cả chân	~1500 mm
+        Chiều rộng chân	~770mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 130,
+        Name: 'Bồn nước inox Hwata 700 lít đứng 700l',
+        originalPrice: 3020000,
+        discountPrice: 2335000,
+        image: 'image/son-ha-sg-bon-inox-dung-700l.jpg',
+        image1: 'image/son-ha-sg-bon-inox-dung-700l.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Thân bồn I304, Chân thép không rỉ
+        Thể tích	~700 lít
+        Độ dày	0,5mm (5 zem)
+        Phụ kiện kèm theo	Chân bồn, pass cố định bồn, phiếu bảo hành
+        Đường kính thân	~760 mm
+        Chiều cao cả chân	~1750 mm
+        Chiều rộng chân	~770mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 131,
+        Name: 'Bồn nước inox Hwata 700 lít ngang 700l',
+        originalPrice: 3324000,
+        discountPrice: 2575000,
+        image: 'image/700 Ngang.jpg',
+        image1: 'image/700 Ngang.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~700 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1500 mm
+        Chiều rộng chân	~760 mm
+        Tổng cao bồn	~920 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 132,
+        Name: 'Bồn nước inox Hwata 1000 lít đứng 1000l',
+        originalPrice: 3868000,
+        discountPrice: 2970000,
+        image: 'image/son-ha-sg-bon-inox-dung-1000l.jpg',
+        image1: 'image/son-ha-sg-bon-inox-dung-1000l.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Thân bồn I304, Chân thép không rỉ
+        Thể tích	~1000 lít
+        Độ dày	0,5mm (5 zem)
+        Phụ kiện kèm theo	Chân bồn, pass cố định bồn, phiếu bảo hành
+        Đường kính thân	~920 mm
+        Chiều cao cả chân	~1750 mm
+        Chiều rộng chân	~930 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 133,
+        Name: 'Bồn nước inox Hwata 1000 lít ngang 1000l',
+        originalPrice: 4091000,
+        discountPrice: 3160000,
+        image: 'image/1000 Ngang.jpg',
+        image1: 'image/1000 Ngang.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~1000 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1500 mm
+        Chiều rộng chân	~920 mm
+        Tổng cao bồn	~1130 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 134,
+        Name: 'Bồn nước inox Hwata 1500 lít ngang 1500l',
+        originalPrice: 6013000,
+        discountPrice: 4675000,
+        image: 'image/1500 Ngang.jpg',
+        image1: 'image/1500 Ngang.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~1500 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1530 mm
+        Chiều rộng chân	~1160 mm
+        Tổng cao bồn	~1300 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 135,
+        Name: 'Bồn nước inox Hwata 2000 lít đứng 2000l',
+        originalPrice: 7333000,
+        discountPrice: 5760000,
+        image: 'image/son-ha-sg-bon-inox-dung-2000l.jpg',
+        image1: 'image/son-ha-sg-bon-inox-dung-2000l.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Thân bồn I304, Chân thép không rỉ
+        Thể tích	~2000 lít
+        Độ dày	0,6 mm (6 zem)
+        Phụ kiện kèm theo	Chân bồn, pass cố định bồn, phiếu bảo hành
+        Đường kính thân	~1160 mm
+        Chiều cao cả chân	~2180 mm
+        Chiều rộng chân	~1170mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 136,
+        Name: 'Bồn nước inox Hwata 2000 lít ngang 2000l',
+        originalPrice: 7835000,
+        discountPrice: 6050000,
+        image: 'image/2000 Ngang.jpg',
+        image1: 'image/2000 Ngang.jpg',
+        cat: 'bon nuoc',
+        brand: 'Hwata',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~2000 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1980 mm
+        Chiều rộng chân	~1160 mm
+        Tổng cao bồn	~1300 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 137,
+        Name: 'Máy nước nóng năng lượng mặt trời Ariston 132L',
+        originalPrice: 9590000,
+        discountPrice: 6570000,
+        image: 'image/may-nuoc-nong-nang-luong-mat-troi-ariston.jpg',
+        image1: 'image/may-nuoc-nong-nang-luong-mat-troi-ariston-132.jpg',
+        cat: 'may nuoc nong',
+        brand: 'Ariston',
+        type: 'new',
+        description: `Thông tin máy nước nóng năng lượng mặt trời Ariston 132 lít
+        Tên sản phẩm: Máy nước nóng năng nượng mặt trời Ariston dạng ống
+        Tổng dung tích: 132 lít
+        Dung tích bình chứa: 110 lít
+        Chiều dài ống: 1800 mm
+        Số lượng ống: 12 ống
+        Đường kính ống: Ø58
+        Diện tích thu nhiệt: 1.66 m2
+        Kích thước lắp đặt: 1260 x 1140 x 1900 mm
+        Công nghệ: Ý
+        Thời gian bảo hành: 5 Năm
+        Hệ thống ống chân không 3 lớp: Lớp truyền nhiệt, lớp hấp thụ nhiệt, lớp phản quang
+        Ruột bình chứa inox 304 không mối hàn
+        Vỏ bình chất liệu thép sơn tỉnh điện
+        Khung chân: Hợp kim nhôm
+        Thất thoát nhiệt sau 6 giờ: 3.4 độ C`,
+    },
+    {
+        id: 138,
+        Name: 'Máy nước nóng năng lượng mặt trời Ariston 160L',
+        originalPrice: 10390000,
+        discountPrice: 7720000,
+        image: 'image/may-nuoc-nong-nang-luong-mat-troi-ariston.jpg',
+        image1: 'image/su-dung-may-nuoc-nong-nang-luong-mat-troi-ariston-2.jpg',
+        cat: 'may nuoc nong',
+        brand: 'Ariston',
+        type: 'new',
+        description: `Thông tin máy nước nóng năng lượng mặt trời Ariston 160 lít
+        Tên sản phẩm: Máy nước nóng năng nượng mặt trời Ariston dạng ống
+        Tổng dung tích: 160 lít
+        Dung tích bình chứa: 125 lít
+        Chiều dài ống: 1800 mm
+        Số lượng ống: 15 cái
+        Đường kính ống: Ø58
+        Diện tích thu nhiệt: 2.07 m2
+        Công suất của thiết bị tăng cường nhiệt: 1500 W
+        Kích thước lắp đặt: 1500 x 1140 x 1900 mm
+        Công nghệ: Ý
+        Thời gian bảo hành: 5 Năm
+        Hệ thống ống chân không 3 lớp: Lớp truyền nhiệt, lớp hấp thụ nhiệt, lớp phản quang
+        Ruột bình chứa inox 304 không mối hàn
+        Vỏ bình chất liệu thép sơn tỉnh điện
+        Khung chân: Hợp kim nhôm
+        Thất thoát nhiệt sau 6 giờ: 3.4 độ C`,
+    },
+    {
+        id: 139,
+        Name: 'Máy nước nóng năng lượng mặt trời Ariston 190L',
+        originalPrice: 11490000,
+        discountPrice: 8760000,
+        image: 'image/may-nuoc-nong-nang-luong-mat-troi-ariston.jpg',
+        image1: 'image/may-nuoc-nong-nlmt-ariston-190-lit.jpg',
+        cat: 'may nuoc nong',
+        brand: 'Ariston',
+        type: 'new',
+        description: `Thông tin máy nước nóng năng lượng mặt trời Ariston 190 lít
+        Tên sản phẩm: Máy nước nóng năng nượng mặt trời Ariston dạng ống
+        Tổng dung tích: 190 lít
+        Dung tích bình chứa: 160 lít
+        Chiều dài ống: 1800 mm
+        Số lượng ống: 18 ống
+        Đường kính ống: Ø58
+        Diện tích thu nhiệt: 2.48 m2
+        Công suất của thiết bị tăng cường nhiệt: 1500 W
+        Kích thước lắp đặt: 1500 x 1140 x 1900 mm
+        Công nghệ: Ý
+        Thời gian bảo hành: 5 Năm
+        Hệ thống ống chân không 3 lớp: Lớp truyền nhiệt, lớp hấp thụ nhiệt, lớp phản quang
+        Ruột bình chứa inox 304 không mối hàn
+        Vỏ bình chất liệu thép sơn tỉnh điện
+        Khung chân: Hợp kim nhôm
+        Thất thoát nhiệt sau 6 giờ: 3.4 độ C`,
+    },
+    {
+        id: 140,
+        Name: 'Máy nước nóng năng lượng mặt trời Ariston 210L',
+        originalPrice: 13390000,
+        discountPrice: 9600000,
+        image: 'image/may-nuoc-nong-nang-luong-mat-troi-ariston.jpg',
+        image1: 'image/thong-tin-may-nuoc-nong-mat-troi-arriston-190L-1-1.png',
+        cat: 'may nuoc nong',
+        brand: 'Ariston',
+        type: 'new',
+        description: `Thông tin máy nước nóng năng lượng mặt trời Ariston 210 lít
+        Tên sản phẩm: Máy nước nóng năng nượng mặt trời Ariston dạng ống
+        Tổng dung tích: 210 lít
+        Dung tích bình chứa: 168 lít
+        Chiều dài ống: 1800 mm
+        Số lượng ống: 20 ống
+        Đường kính ống: Ø58
+        Diện tích thu nhiệt: 2.75 m2
+        Công suất của thiết bị tăng cường nhiệt: 1500 W
+        Kích thước lắp đặt: 1900 x 1140 x 1900 mm
+        Công nghệ: Ý
+        Thời gian bảo hành: 5 Năm
+        Hệ thống ống chân không 3 lớp: Lớp truyền nhiệt, lớp hấp thụ nhiệt, lớp phản quang
+        Ruột bình chứa inox 304 không mối hàn
+        Vỏ bình chất liệu thép sơn tỉnh điện
+        Khung chân: Hợp kim nhôm
+        Thất thoát nhiệt sau 6 giờ: 3.4 độ C`,
+    },
+    {
+        id: 141,
+        Name: 'Máy nước nóng năng lượng mặt trời Ariston 250L',
+        originalPrice: 15690000,
+        discountPrice: 11900000,
+        image: 'image/may-nuoc-nong-nang-luong-mat-troi-ariston.jpg',
+        image1: 'image/su-dung-may-nuoc-nong-nang-luong-mat-troi-ariston-1-2.jpg',
+        cat: 'may nuoc nong',
+        brand: 'Ariston',
+        type: 'new',
+        description: `Thông tin máy nước nóng năng lượng mặt trời Ariston 250 lít
+        Tên sản phẩm: Máy nước nóng năng nượng mặt trời Ariston dạng ống
+        Tổng dung tích: 250 lít
+        Dung tích bình chứa: 195 lít
+        Chiều dài ống: 1800 mm
+        Số lượng ống: 24 ống
+        Đường kính ống: Ø58
+        Diện tích thu nhiệt: 3.29 m2
+        Công suất của thiết bị tăng cường nhiệt: 1500 W
+        Kích thước lắp đặt: 2220 x 1140 x 1900 mm
+        Công nghệ: Ý
+        Thời gian bảo hành: 5 Năm
+        Hệ thống ống chân không 3 lớp: Lớp truyền nhiệt, lớp hấp thụ nhiệt, lớp phản quang
+        Ruột bình chứa inox 304 không mối hàn
+        Vỏ bình chất liệu thép sơn tỉnh điện
+        Khung chân: Hợp kim nhôm
+        Thất thoát nhiệt sau 6 giờ: 3.4 độ C`,
+    },
+    {
+        id: 142,
+        Name: 'Máy nước nóng năng lượng mặt trời Ariston 300L',
+        originalPrice: 17690000,
+        discountPrice: 13310000,
+        image: 'image/may-nuoc-nong-nang-luong-mat-troi-ariston.jpg',
+        image1: 'image/su-dung-may-nuoc-nong-nang-luong-mat-troi-ariston-1-2-1.jpg',
+        cat: 'may nuoc nong',
+        brand: 'Ariston',
+        type: 'new',
+        description: `Thông tin máy nước nóng năng lượng mặt trời Ariston 300 lít
+        Tên sản phẩm: Máy nước nóng năng nượng mặt trời Ariston dạng ống
+        Tổng dung tích: 300 lít
+        Dung tích bình chứa: 235 lít
+        Chiều dài ống: 1800 mm
+        Số lượng ống: 28 cái
+        Đường kính ống: Ø58
+        Diện tích thu nhiệt: 3.84 m2
+        Công suất của thiết bị tăng cường nhiệt: 1500 W
+        Kích thước lắp đặt: 2540 x 1140 x 1900 mm
+        Công nghệ: Ý
+        Thời gian bảo hành: 5 Năm
+        Hệ thống ống chân không 3 lớp: Lớp truyền nhiệt, lớp hấp thụ nhiệt, lớp phản quang
+        Ruột bình chứa inox 304 không mối hàn
+        Vỏ bình chất liệu thép sơn tỉnh điện
+        Khung chân: Hợp kim nhôm
+        Thất thoát nhiệt sau 6 giờ: 3.4 độ C,`,
+    },
+    {
+        id: 143,
+        Name: 'Máy nước nóng năng lượng mặt trời Đại Thành 130L',
+        originalPrice: 6930000,
+        discountPrice: 5720000,
+        image: 'image/daithanh8.jpg',
+        image1: 'image/daithanh8.jpg',
+        cat: 'may nuoc nong',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Bồn bảo ôn
+        Dung tính bồn bảo ôn	130 lít
+        Ruột bồn	Inox SUS 304
+        Vỏ bồn	Inox SUS 201
+        Chân	Thép không rỉ
+        Kích thước	1850 x 1100 x 1230mm 
+        Chịu áp	Không
+        Hỗ trợ điện	Không
+        Thanh Magie chống ăn mòn	Không
+        Bảo hành	5 năm
+        Thu nhiệt
+        Loại	Ống thủy tinh chân không 3 lớp: - Lớp truyền nhiệt - Lớp hấp thụ nhiệt - Lớp phản quang
+        Chiều dài	1800mm
+        Số ống	12
+        Tặng bộ phụ kiện lắp máy`,
+    },
+    {
+        id: 144,
+        Name: 'Máy nước nóng năng lượng mặt trời Đại Thành 160L',
+        originalPrice: 7500000,
+        discountPrice: 6360000,
+        image: 'image/daithanh8.jpg',
+        image1: 'image/daithanh8.jpg',
+        cat: 'may nuoc nong',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Bồn bảo ôn
+        Dung tính bồn bảo ôn	160 lít
+        Ruột bồn	Inox SUS 304
+        Vỏ bồn	Inox SUS 201
+        Chân	Thép không rỉ
+        Kích thước	2000 x 1350 x 1230mm 
+        Chịu áp	Không
+        Hỗ trợ điện	Không
+        Thanh Magie chống ăn mòn	Không
+        Bảo hành	5 năm
+        Thu nhiệt
+        Loại	Ống thủy tinh chân không 3 lớp: - Lớp truyền nhiệt - Lớp hấp thụ nhiệt - Lớp phản quang
+        Chiều dài	1800mm
+        Số ống	15
+        Tặng bộ phụ kiện lắp máy`,
+    },
+    {
+        id: 145,
+        Name: 'Máy nước nóng năng lượng mặt trời Đại Thành 180L',
+        originalPrice: 9000000,
+        discountPrice: 7280000,
+        image: 'image/daithanh8.jpg',
+        image1: 'image/daithanh8.jpg',
+        cat: 'may nuoc nong',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Bồn bảo ôn
+        Dung tính bồn bảo ôn	180 lít
+        Ruột bồn	Inox SUS 304
+        Vỏ bồn	Inox SUS 201
+        Chân	Thép không rỉ
+        Kích thước	2000 x 1600 x 1230mm 
+        Chịu áp	Không
+        Hỗ trợ điện	Không
+        Thanh Magie chống ăn mòn	Không
+        Bảo hành	5 năm
+        Thu nhiệt
+        Loại	Ống thủy tinh chân không 3 lớp: - Lớp truyền nhiệt - Lớp hấp thụ nhiệt - Lớp phản quang
+        Chiều dài	1800mm
+        Đường kính	58mm
+        Số ống	18
+        Tặng bộ phụ kiện lắp máy`,
+    },
+    {
+        id: 146,
+        Name: 'Máy nước nóng năng lượng mặt trời Đại Thành 215L',
+        originalPrice: 11599000,
+        discountPrice: 8750000,
+        image: 'image/daithanh8.jpg',
+        image1: 'image/daithanh8.jpg',
+        cat: 'may nuoc nong',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Bồn bảo ôn
+        Dung tính bồn bảo ôn	215 lít
+        Ruột bồn	Inox SUS 304
+        Vỏ bồn	Inox SUS 201
+        Chân	Thép không rỉ
+        Kích thước	2000 x 1830 x 1230mm 
+        Chịu áp	Không
+        Hỗ trợ điện	Không
+        Thanh Magie chống ăn mòn	Không
+        Bảo hành	5 năm
+        Thu nhiệt
+        Loại	Ống thủy tinh chân không 3 lớp: - Lớp truyền nhiệt - Lớp hấp thụ nhiệt - Lớp phản quang
+        Chiều dài	1800mm
+        Đường kính	58mm
+        Số ống	21
+        Tặng bộ phụ kiện lắp máy`,
+    },
+    {
+        id: 147,
+        Name: 'Máy nước nóng năng lượng mặt trời Đại Thành 250L',
+        originalPrice: 12499000,
+        discountPrice: 7730000,
+        image: 'image/daithanh8.jpg',
+        image1: 'image/daithanh8.jpg',
+        cat: 'may nuoc nong',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Bồn bảo ôn
+        Dung tính bồn bảo ôn	250 lít
+        Ruột bồn	Inox SUS 304
+        Vỏ bồn	Inox SUS 201
+        Chân	Thép không rỉ
+        Kích thước	2000 x 2070 x 1230mm 
+        Chịu áp	Không
+        Hỗ trợ điện	Không
+        Thanh Magie chống ăn mòn	Không
+        Bảo hành	5 năm
+        Thu nhiệt
+        Loại	Ống thủy tinh chân không 3 lớp: - Lớp truyền nhiệt - Lớp hấp thụ nhiệt - Lớp phản quang
+        Chiều dài	1800mm
+        Đường kính	58mm
+        Số ống	24`,
+    },
+    {
+        id: 148,
+        Name: 'Máy nước nóng năng lượng mặt trời Đại Thành 300L',
+        originalPrice: 13799000,
+        discountPrice: 10770000,
+        image: 'image/daithanh8.jpg',
+        image1: 'image/daithanh8.jpg',
+        cat: 'may nuoc nong',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Bồn bảo ôn
+        Dung tính bồn bảo ôn	300 lít
+        Ruột bồn	Inox SUS 304
+        Vỏ bồn	Inox SUS 201
+        Chân	Thép không rỉ
+        Kích thước	2000 x 2400 x 1230mm 
+        Chịu áp	Không
+        Hỗ trợ điện	Không
+        Thanh Magie chống ăn mòn	Không
+        Bảo hành	5 năm
+        Thu nhiệt
+        Loại	Ống thủy tinh chân không 3 lớp: - Lớp truyền nhiệt - Lớp hấp thụ nhiệt - Lớp phản quang
+        Chiều dài	1800mm
+        Đường kính	58mm
+        Số ống	28
+        Tặng bộ phụ kiện lắp máy`,
+    },
+    {
+        id: 149,
+        Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 120 lít',
+        originalPrice: 3100000,
+        discountPrice: 3100000,
+        image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        cat: 'may nuoc nong',
+        brand: 'Wapi',
+        type: 'new',
+        description: `Vật liệu ruột bình: Thép không gỉ (Inox) SUS 304 – 2B
+        Vật liệu vỏ bình: Thép không gỉ (Inox)
+        Vật liệu khung chân: Thép không gỉ (Inox)
+        Ống chân không thu nhiệt: Ø58×1800
+        Lớp bảo ôn – Cách nhiệt: Dày 55mm
+        Đường kính bồn: Ø 460mm
+        Dày: 0.41mm
+        Số ống: 12 ống
+        Kích thước: (D x R x C mm) 2000 x 1170 x1200`,
+    },
+    {
+        id: 150,
+        Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 300 lít',
+        originalPrice: 3725000,
+        discountPrice: 3725000,
+        image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        cat: 'may nuoc nong',
+        brand: 'Wapi',
+        type: 'new',
+        description: `Sản phẩm sản xuất theo công nghệ CHLB Đức
+        Vật liệu ruột bình: Thép không gỉ (Inox) SUS 304 – 2B
+        Vật liệu vỏ bình: Thép không gỉ (Inox)
+        Vật liệu khung chân: Thép không gỉ (Inox)
+        Ống chân không thu nhiệt: Ø58×1800
+        Lớp bảo ôn – Cách nhiệt: Dày 55mm
+        Đường kính bồn: Ø 460mm
+        Dày: 0.41mm
+        Số ống: 30 ống
+        Kích thước: (D x R x C mm) 2000 x 2610 x1200`,
+    },
+    {
+        id: 151,
+        Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 150 lít',
+        originalPrice: 3775000,
+        discountPrice: 3775000,
+        image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        cat: 'may nuoc nong',
+        brand: 'Wapi',
+        type: 'new',
+        description: `Vật liệu ruột bình: Thép không gỉ (Inox) SUS 304 – 2B
+        Vật liệu vỏ bình: Thép không gỉ (Inox)
+        Vật liệu khung chân: Thép không gỉ (Inox)
+        Ống chân không thu nhiệt: Ø58×1800
+        Lớp bảo ôn – Cách nhiệt: Dày 55mm
+        Đường kính bồn: Ø 460mm
+        Dày: 0.41mm
+        Số ống: 15 ống
+        Kích thước: (D x R x C mm) 2000 x 1410 x1200`,
+    },
+    {
+        id: 152,
+        Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 180 lít',
+        originalPrice: 4450000,
+        discountPrice: 4450000,
+        image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        cat: 'may nuoc nong',
+        brand: 'Wapi',
+        type: 'new',
+        description: `Vật liệu ruột bình: Thép không gỉ (Inox) SUS 304 – 2B
+        Vật liệu vỏ bình: Thép không gỉ (Inox)
+        Vật liệu khung chân: Thép không gỉ (Inox)
+        Ống chân không thu nhiệt: Ø58×1800
+        Lớp bảo ôn – Cách nhiệt: Dày 55mm
+        Đường kính bồn: Ø 460mm
+        Dày: 0.41mm
+        Số ống: 18 ống
+        Kích thước: (D x R x C mm) 2000 x 1650 x1200`,
+    },
+    {
+        id: 153,
+        Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 200 lít',
+        originalPrice: 5000000,
+        discountPrice: 5000000,
+        image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        cat: 'may nuoc nong',
+        brand: 'Wapi',
+        type: 'new',
+        description: `Vật liệu ruột bình: Thép không gỉ (Inox) SUS 304 – 2B
+        Vật liệu vỏ bình: Thép không gỉ (Inox)
+        Vật liệu khung chân: Thép không gỉ (Inox)
+        Ống chân không thu nhiệt: Ø58×1800
+        Lớp bảo ôn – Cách nhiệt: Dày 55mm
+        Đường kính bồn: Ø 460mm
+        Dày: 0.41mm
+        Số ống: 20 ống
+        Kích thước: (D x R x C mm) 2000 x 1810 x1200`,
+    },
+    {
+        id: 154,
+        Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 240 lít',
+        originalPrice: 5900000,
+        discountPrice: 5900000,
+        image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
+        cat: 'may nuoc nong',
+        brand: 'Wapi',
+        type: 'new',
+        description: `Vật liệu ruột bình: Thép không gỉ (Inox) SUS 304 – 2B
+        Vật liệu vỏ bình: Thép không gỉ (Inox)
+        Vật liệu khung chân: Thép không gỉ (Inox)
+        Ống chân không thu nhiệt: Ø58×1800
+        Lớp bảo ôn – Cách nhiệt: Dày 55mm
+        Đường kính bồn: Ø 460mm
+        Dày: 0.41mm
+        Số ống: 24 ống
+        Kích thước: (D x R x C mm) 2000 x 2130 x1200`,
+    },
+    {
+        id: 155,
+        Name: 'Bồn nước inox toàn mỹ 310 đứng 310l',
+        originalPrice: 2500000,
+        discountPrice: 2110000,
+        image: 'image/uploaded_bon-nuoc-inox-toan-my-310-dung.jpg',
+        image1: 'image/uploaded_bon-nuoc-inox-toan-my-310-dung.jpg',
+        cat: 'bon nuoc',
+        brand: 'ToanMy',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Inox 304
+        Thể tích	~310 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều cao bồn	~1100 mm
+        Chiều rộng chân	~900 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 156,
+        Name: 'Bồn nước inox toàn mỹ 500 đứng 500l',
+        originalPrice: 2930000,
+        discountPrice: 2490000,
+        image: 'image/uploaded_bon-nuoc-inox-toan-my-500l-dung_thumbcr_600x450.jpg',
+        image1: 'image/uploaded_bon-nuoc-inox-toan-my-500l-dung_thumbcr_600x450.jpg',
+        cat: 'bon nuoc',
+        brand: 'ToanMy',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Inox 304
+        Thể tích	~500 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều cao bồn	~1520 mm
+        Chiều rộng chân	~900 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 157,
+        Name: 'Bồn nước inox toàn mỹ 500 ngang 500l',
+        originalPrice: 3160000,
+        discountPrice: 2660000,
+        image: 'image/uploaded_bon-nuoc-inox-toan-my-500l-nam_thumbcr_600x450.jpg',
+        image1: 'image/uploaded_bon-nuoc-inox-toan-my-500l-nam_thumbcr_600x450.jpg',
+        cat: 'bon nuoc',
+        brand: 'ToanMy',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~500 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1265 mm
+        Chiều rộng chân	~800 mm
+        Tổng cao bồn	~965 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 158,
+        Name: 'Bồn nước inox toàn mỹ 700 đứng 700l',
+        originalPrice: 3610000,
+        discountPrice: 3200000,
+        image: 'image/uploaded_bon-nuoc-inox-toan-my-700-dung.jpg',
+        image1: 'image/uploaded_bon-nuoc-inox-toan-my-700-dung.jpg',
+        cat: 'bon nuoc',
+        brand: 'ToanMy',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Inox 304
+        Thể tích	~700 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều cao bồn	~1910 mm
+        Chiều rộng chân	~900 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 159,
+        Name: 'Bồn nước inox toàn mỹ 700 ngang 700l',
+        originalPrice: 4130000,
+        discountPrice: 3720000,
+        image: 'image/uploaded_bon-nuoc-inox-toan-my-700 NGANG.jpg',
+        image1: 'image/uploaded_bon-nuoc-inox-toan-my-700 NGANG.jpg',
+        cat: 'bon nuoc',
+        brand: 'ToanMy',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~700 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1650 mm
+        Chiều rộng chân	~800 mm
+        Tổng cao bồn	~965 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 160,
+        Name: 'Bồn nước inox toàn mỹ 1000 đứng 1000l',
+        originalPrice: 4680000,
+        discountPrice: 3840000,
+        image: 'image/uploaded_bon-nuoc-inox-toan-my-1000-dung.jpg',
+        image1: 'image/uploaded_bon-nuoc-inox-toan-my-1000-dung.jpg',
+        cat: 'bon nuoc',
+        brand: 'ToanMy',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Inox 304
+        Thể tích	~1000 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều cao bồn	~1765 mm
+        Chiều rộng chân	~1100 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 161,
+        Name: 'Bồn nước inox toàn mỹ 1000 ngang 1000l',
+        originalPrice: 5060000,
+        discountPrice: 4185000,
+        image: 'image/uploaded_bon-nuoc-inox-toan-my-1000 NGANG.jpg',
+        image1: 'image/uploaded_bon-nuoc-inox-toan-my-1000 NGANG.jpg',
+        cat: 'bon nuoc',
+        brand: 'ToanMy',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~1000 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1510 mm
+        Chiều rộng chân	~1000 mm
+        Tổng cao bồn	~1210 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 162,
+        Name: 'Bồn nước inox toàn mỹ 1500 đứng 1500l',
+        originalPrice: 6890000,
+        discountPrice: 5660000,
+        image: 'image/uploaded_bon-nuoc-inox-toan-my-1500-dung.jpg',
+        image1: 'image/uploaded_bon-nuoc-inox-toan-my-1500-dung.jpg',
+        cat: 'bon nuoc',
+        brand: 'ToanMy',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Inox 304
+        Thể tích	~1500 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều cao bồn	~1750 mm
+        Chiều rộng chân	~1310 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 163,
+        Name: 'Bồn nước inox toàn mỹ 1500 ngang 1500l',
+        originalPrice: 7450000,
+        discountPrice: 6110000,
+        image: 'image/uploaded_bon-nuoc-inox-toan-my-1500 NGANG.jpg',
+        image1: 'image/uploaded_bon-nuoc-inox-toan-my-1500 NGANG.jpg',
+        cat: 'bon nuoc',
+        brand: 'ToanMy',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~1500 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1540 mm
+        Chiều rộng chân	~1200 mm
+        Tổng cao bồn	~1420 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 164,
+        Name: 'Bồn nước inox toàn mỹ 2000 đứng 2000l',
+        originalPrice: 8570000,
+        discountPrice: 7200000,
+        image: 'image/uploaded_bon-nuoc-inox-toan-my-2000-dung.jpg',
+        image1: 'image/uploaded_bon-nuoc-inox-toan-my-2000-dung.jpg',
+        cat: 'bon nuoc',
+        brand: 'ToanMy',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Inox 304
+        Thể tích	~2000 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều cao bồn	~2160 mm
+        Chiều rộng chân	~1310 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 165,
+        Name: 'Bồn nước inox toàn mỹ 2000 ngang 2000l',
+        originalPrice: 9340000,
+        discountPrice: 7880000,
+        image: 'image/uploaded_bon-nuoc-inox-toan-my-2000 NGANG.jpg',
+        image1: 'image/uploaded_bon-nuoc-inox-toan-my-2000 NGANG.jpg',
+        cat: 'bon nuoc',
+        brand: 'ToanMy',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~2000 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1955 mm
+        Chiều rộng chân	~1200 mm
+        Tổng cao bồn	~1420 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 166,
+        Name: 'Bồn nước inox đại thành 500 đứng 500l',
+        originalPrice: 2929000,
+        discountPrice: 2310000,
+        image: 'image/2_cbcb4f645a4a4d7584bc2dad95079f8e_grande.png',
+        image1: 'image/2_cbcb4f645a4a4d7584bc2dad95079f8e_grande.png',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Thân bồn I304, Chân thép không rỉ
+        Thể tích	~500 lít
+        Độ dày	0,6mm (6 zem)
+        Phụ kiện kèm theo	Chân bồn, pass cố định bồn, phiếu bảo hành
+        Đường kính thân	~720 mm
+        Chiều cao cả chân	Chân thấp: ~1.475mm, chân cao +500mm
+        Chiều rộng chân	~770mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 167,
+        Name: 'Bồn nước inox đại thành 500 ngang 500l',
+        originalPrice: 3079000,
+        discountPrice: 2450000,
+        image: 'image/resize_dai_thanh_e5bfa66957704246bcf56702cd279f14.png',
+        image1: 'image/resize_dai_thanh_e5bfa66957704246bcf56702cd279f14.png',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~500 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1200 mm
+        Chiều rộng chân	~740 mm
+        Tổng cao bồn	~870 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 168,
+        Name: 'Bồn nước inox đại thành 700 đứng 700l',
+        originalPrice: 3645000,
+        discountPrice: 278000,
+        image: 'image/700-dung.png',
+        image1: 'image/700-dung.png',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Thân bồn I304, Chân thép không rỉ
+        Thể tích	~700 lít
+        Phụ kiện kèm theo	Chân bồn, pass cố định bồn, phiếu bảo hành
+        Đường kính thân	~720 mm
+        Chiều cao cả chân	Chân thấp: ~1.685mm, chân cao +500mm
+        Chiều rộng chân	~770mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 168,
+        Name: 'Bồn nước inox đại thành 700 ngang 700l',
+        originalPrice: 3795000,
+        discountPrice: 293000,
+        image: 'image/700-NGANG.png',
+        image1: 'image/700-NGANG.png',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~700 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1410 mm
+        Chiều rộng chân	~740 mm
+        Tổng cao bồn	~870 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 169,
+        Name: 'Bồn nước inox đại thành 1000 đứng 1000l',
+        originalPrice: 4799000,
+        discountPrice: 3550000,
+        image: 'image/1000-dung.png',
+        image1: 'image/1000-dung.png',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Inox 304
+        Thể tích	~1000 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều cao bồn	~1735 mm
+        Chiều rộng chân	~990 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 170,
+        Name: 'Bồn nước inox đại thành 1000 ngang 1000l',
+        originalPrice: 5099000,
+        discountPrice: 3850000,
+        image: 'image/1000 NGANG.jpg',
+        image1: 'image/1000 NGANG.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~1000 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1450 mm
+        Chiều rộng chân	~1000 mm
+        Tổng cao bồn	~1120 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 171,
+        Name: 'Bồn nước inox đại thành 1500 đứng 1500l',
+        originalPrice: 7439000,
+        discountPrice: 5550000,
+        image: 'image/1500-dung.png',
+        image1: 'image/1500-dung.png',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Thân bồn I304, Chân thép không rỉ
+        Thể tích	~1500 lít
+        Phụ kiện kèm theo	Chân bồn, pass cố định bồn, phiếu bảo hành
+        Đường kính thân	~1.170 mm
+        Chiều cao cả chân	Chân thấp: ~1.7150mm, chân cao +500mm
+        Chiều rộng chân	~1.220 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 172,
+        Name: 'Bồn nước inox đại thành 1500 ngang 1500l',
+        originalPrice: 7709000,
+        discountPrice: 5790000,
+        image: 'image/1500 NGANG.jpg',
+        image1: 'image/1500 NGANG.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~1500 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1470 mm
+        Chiều rộng chân	~1220 mm
+        Tổng cao bồn	~1355 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 173,
+        Name: 'Bồn nước inox đại thành 2000 đứng 2000l',
+        originalPrice: 9719000,
+        discountPrice: 7090000,
+        image: 'image/2000-dung.png',
+        image1: 'image/2000-dung.png',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Thân bồn I304, Chân thép không rỉ
+        Thể tích	~2.000 lít
+        Phụ kiện kèm theo	Chân bồn, pass cố định bồn, phiếu bảo hành
+        Đường kính thân	~1210 mm
+        Chiều cao cả chân	Chân thấp: ~2.095mm, chân cao +500mm
+        Chiều rộng chân	~1.220mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 174,
+        Name: 'Bồn nước inox đại thành 2000 ngang 2000l',
+        originalPrice: 10069000,
+        discountPrice: 7550000,
+        image: 'image/2000 NGANG.jpg',
+        image1: 'image/2000 NGANG.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Inox 304
+        Thể tích	~2000 lít
+        Phụ kiện kèm theo	Không bao gồm
+        Chiều dài bồn	~1850 mm
+        Chiều rộng chân	~1220 mm
+        Tổng cao bồn	~1355 mm
+        Bảo hành	Bảo hành chính hãng 12 năm`,
+    },
+    {
+        id: 175,
+        Name: 'Bồn nước nhựa đại thành 500 đứng 500l',
+        originalPrice: 1650000,
+        discountPrice: 1160000,
+        image: 'image/500 ĐỨNG PLUS.jpg',
+        image1: 'image/500 ĐỨNG PLUS.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Nhựa
+        Thể tích	~500 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Đường kính thân	~862 mm
+        Chiều cao	~970 mm
+        Bảo hành	Bảo hành chính hãng 18 năm`,
+    },
+    {
+        id: 176,
+        Name: 'Bồn nước nhựa đại thành 1000 đứng 1000l',
+        originalPrice: 2700000,
+        discountPrice: 1770000,
+        image: 'image/1000 ĐỨNG PLUS.jpg',
+        image1: 'image/1000 ĐỨNG PLUS.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Nhựa
+        Thể tích	~1000 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Đường kính thân	~960 mm
+        Chiều cao	~1431 mm
+        Bảo hành	Bảo hành chính hãng 18 năm`,
+    },
+    {
+        id: 177,
+        Name: 'Bồn nước nhựa đại thành 1500 đứng 1500l',
+        originalPrice: 4100000,
+        discountPrice: 2720000,
+        image: 'image/1500 ĐỨNG PLUS.jpg',
+        image1: 'image/1500 ĐỨNG PLUS.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Nhựa
+        Thể tích	~1500 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Đường kính thân	~1245 mm
+        Chiều cao	~1460 mm
+        Bảo hành	Bảo hành chính hãng 18 năm`,
+    },
+    {
+        id: 178,
+        Name: 'Bồn nước nhựa đại thành 2000 đứng 2000l',
+        originalPrice: 5300000,
+        discountPrice: 2910000,
+        image: 'image/2000 ĐỨNG PLUS.jpg',
+        image1: 'image/2000 ĐỨNG PLUS.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Nhựa
+        Thể tích	~2000 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Đường kính thân	~1254 mm
+        Chiều cao	~1789 mm
+        Bảo hành	Bảo hành chính hãng 18 năm`,
+    },
+    {
+        id: 179,
+        Name: 'Bồn nước nhựa đại thành 500 ngang 500l',
+        originalPrice: 1850000,
+        discountPrice: 1290000,
+        image: 'image/500 NGANG PLUS ĐẠI THÀNH.jpg',
+        image1: 'image/500 NGANG PLUS ĐẠI THÀNH.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Nhựa
+        Thể tích	~500 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Chiều dài	~1166 mm
+        Chiều rộng	~862 mm
+        Chiều cao	~867 mm
+        Bảo hành	Bảo hành chính hãng 18 năm`,
+    },
+    {
+        id: 180,
+        Name: 'Bồn nước nhựa đại thành 1000 ngang 1000l',
+        originalPrice: 3300000,
+        discountPrice: 2300000,
+        image: 'image/1000 NGANG PLUS ĐẠI THÀNH.jpg',
+        image1: 'image/1000 NGANG PLUS ĐẠI THÀNH.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Nhựa
+        Thể tích	~1000 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Chiều dài	~1519 mm
+        Chiều rộng	~980 mm
+        Chiều cao	~980 mm
+        Bảo hành	Bảo hành chính hãng 18 năm`,
+    },
+    {
+        id: 181,
+        Name: 'Bồn nước nhựa đại thành 300L đứng thế hệ mới 300l',
+        originalPrice: 1340000,
+        discountPrice: 910000,
+        image: 'image/bon-nhua-thm-dai-thanh-dung-0051.jpg',
+        image1: 'image/bon-nhua-thm-dai-thanh-dung-0051.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông tin cơ bản bồn nước Đại Thành 300L đứng nhựa thế hệ mới
+        Chiều cao: 890 mm
+        Đường kính: 720 mm
+        Kết cấu nhựa: 4 lớp
+        Logo Tân Á in nổi
+        Đạt tiêu chuẩn IOS 9001 -2008 in nổi
+        Tháng năm sản xuất in nổi
+        Dung tích chuẩn in nổi trên thân bồn
+        Nắp bồn hiện đại hơn, đa dạng kết cấu gân bồn
+        Bảo hành dài hạn: 25 năm`,
+    },
+    {
+        id: 182,
+        Name: 'Bồn nước nhựa đại thành 300L ngang thế hệ mới 300l',
+        originalPrice: 1500000,
+        discountPrice: 1090000,
+        image: 'image/bon-nhua-thm-dai-thanh-nam-ngang-0604.jpg',
+        image1: 'image/bon-nhua-thm-dai-thanh-nam-ngang-0604.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Nhựa
+        Thể tích	~300 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Chiều dài	~950 mm
+        Chiều rộng	~630 mm
+        Chiều cao	~740 mm
+        Bảo hành	Bảo hành chính hãng 25 năm`,
+    },
+    {
+        id: 183,
+        Name: 'Bồn nước nhựa đại thành 500L đứng thế hệ mới 500l',
+        originalPrice: 1500000,
+        discountPrice: 1250000,
+        image: 'image/bon-nhua-thm-dai-thanh-dung-0051.jpg',
+        image1: 'image/bon-nhua-thm-dai-thanh-dung-0051.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Nhựa
+        Thể tích	~500 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Đường kính thân	~950 mm
+        Chiều cao	~1010 mm
+        Bảo hành	Bảo hành chính hãng 25 năm`,
+    },
+    {
+        id: 184,
+        Name: 'Bồn nước nhựa đại thành 500L ngang thế hệ mới 500l',
+        originalPrice: 1600000,
+        discountPrice: 1380000,
+        image: 'image/bon-nhua-thm-dai-thanh-nam-ngang-0604.jpg',
+        image1: 'image/bon-nhua-thm-dai-thanh-nam-ngang-0604.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Nhựa
+        Thể tích	~500 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Chiều dài	~1190 mm
+        Chiều rộng	~880 mm
+        Chiều cao	~900 mm
+        Bảo hành	Bảo hành chính hãng 25 năm`,
+    },
+    {
+        id: 185,
+        Name: 'Bồn nước nhựa đại thành 1000L đứng thế hệ mới 1000l',
+        originalPrice: 2300000,
+        discountPrice: 1950000,
+        image: 'image/bon-nhua-thm-dai-thanh-dung-0051.jpg',
+        image1: 'image/bon-nhua-thm-dai-thanh-dung-0051.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Nhựa
+        Thể tích	~1.000 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Chiều cao	~1440 mm
+        Đường kính thân	~1140 mm
+        Bảo hành	Bảo hành chính hãng 25 năm`,
+    },
+    {
+        id: 186,
+        Name: 'Bồn nước nhựa đại thành 1000L ngang thế hệ mới 1000l',
+        originalPrice: 2900000,
+        discountPrice: 2480000,
+        image: 'image/bon-nhua-thm-dai-thanh-nam-ngang-0604.jpg',
+        image1: 'image/bon-nhua-thm-dai-thanh-nam-ngang-0604.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Nhựa
+        Thể tích	~1000 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Chiều dài	~1505 mm
+        Chiều rộng	~1020 mm
+        Chiều cao	~1100 mm
+        Bảo hành	Bảo hành chính hãng 25 năm`,
+    },
+    {
+        id: 187,
+        Name: 'Bồn nước nhựa đại thành 1500L đứng thế hệ mới 1500l',
+        originalPrice: 3500000,
+        discountPrice: 2990000,
+        image: 'image/bon-nhua-thm-dai-thanh-dung-0051.jpg',
+        image1: 'image/bon-nhua-thm-dai-thanh-dung-0051.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Nhựa
+        Thể tích	~1500 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Chiều cao	~1490 mm
+        Đường kính thân	~1290 mm
+        Bảo hành	Bảo hành chính hãng 25 năm`,
+    },
+    {
+        id: 188,
+        Name: 'Bồn nước nhựa đại thành 1500L ngang thế hệ mới 1500l',
+        originalPrice: 4500000,
+        discountPrice: 4120000,
+        image: 'image/bon-nhua-thm-dai-thanh-nam-ngang-0604.jpg',
+        image1: 'image/bon-nhua-thm-dai-thanh-nam-ngang-0604.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Nhựa
+        Thể tích	~1500 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Chiều dài	~1670 mm
+        Chiều rộng	~1170 mm
+        Chiều cao	~1230 mm
+        Bảo hành	Bảo hành chính hãng 25 năm`,
+    },
+    {
+        id: 189,
+        Name: 'Bồn nước nhựa đại thành 2000L đứng thế hệ mới 2000l',
+        originalPrice: 4200000,
+        discountPrice: 3270000,
+        image: 'image/bon-nhua-thm-dai-thanh-dung-0051.jpg',
+        image1: 'image/bon-nhua-thm-dai-thanh-dung-0051.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn đứng
+        Chất liệu	Nhựa
+        Thể tích	~2.000 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Đường kính thân	~1280 mm
+        Chiều cao	~1820 mm
+        Bảo hành	Bảo hành chính hãng 25 năm`,
+    },
+    {
+        id: 190,
+        Name: 'Bồn nước nhựa đại thành 2000L ngang thế hệ mới 2000l',
+        originalPrice: 6000000,
+        discountPrice: 5230000,
+        image: 'image/bon-nhua-thm-dai-thanh-nam-ngang-0604.jpg',
+        image1: 'image/bon-nhua-thm-dai-thanh-nam-ngang-0604.jpg',
+        cat: 'bon nuoc',
+        brand: 'DaiThanh',
+        type: 'new',
+        description: `Thông số chung
+        Kiểu bồn	Bồn ngang
+        Chất liệu	Nhựa
+        Thể tích	~2000 lít
+        Phụ kiện kèm theo	Có răng ép bồn, phiếu bảo hành
+        Chiều dài	~1890 mm
+        Chiều rộng	~1300 mm
+        Chiều cao	~1390 mm
+        Bảo hành	Bảo hành chính hãng 25 năm`,
+    },
+
 
 
 

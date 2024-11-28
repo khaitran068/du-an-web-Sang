@@ -389,8 +389,16 @@
     margin-bottom: 10px;
     color: #232323;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
+}
+.product_detail .container .info .description
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #232323;
+    font-size: 14px;
+    /* font-weight: 600; */
 }
 
 .product_detail .container .info .price
@@ -411,13 +419,7 @@
 {
     color: #e74c3c; /* Màu đỏ nổi bật cho giá giảm */
     font-weight: bold;
-    font-size: 16px;
-}
-.product_detail .container .info h3
-{
-    margin-top: 10px;
-    font-size: 24px;
-    color: #cd1e76;
+    font-size: 14px;
 }
 .product_detail .container .info button
 {
@@ -556,13 +558,41 @@
         margin-bottom: 5px;
         color: #232323;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
     }
 
 
+    .product_detail .container .info .description
+    {
+        margin-top: 5px;
+        margin-bottom: 0;
+        width: 100%;
+        margin-right: 0;
+        font-size: 12px;
+    }
+    .product_detail .container .info button
+    {
+        margin-top: 2px;
+        padding: 10px 10px;
+        border: none;
+        outline: none;
+        background: none;
+        background: #cd1e76;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
     .product_detail .container .info .price .discount-price {
-        font-size: 14px;
+        font-size: 12px;
+        margin-top: 0;
+    }
+    .product_detail .container .info .price .original-price {
+        font-size: 12px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 

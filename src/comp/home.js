@@ -12,7 +12,7 @@ const Home = ({addtocart}) => {
 
   // Product category
   const [brandLuxta, setBrandLuxta] =  useState([])
-  const [brandInax, setBrandInax] =  useState([])
+  const [brandDaiThanh, setBrandDaiThanh] =  useState([])
   const [brandHwata, setBrandHwata] =  useState([])
   const [brandAriston, setBrandAriston] =  useState([])
 
@@ -61,11 +61,11 @@ const Home = ({addtocart}) => {
       setBrandLuxta(brandluxta)
   
       // Inax brand
-      const brandinax = Homeproduct.filter((x) => 
+      const branddaithanh = Homeproduct.filter((x) => 
       {
-        return x.brand === 'Inax'
+        return x.brand === 'DaiThanh'
       })
-      setBrandInax(brandinax)
+      setBrandDaiThanh(branddaithanh)
   
       // Hwata brand
       const brandhwata= Homeproduct.filter((x) => 
@@ -139,7 +139,7 @@ const Home = ({addtocart}) => {
 
    const [startIndexes, setStartIndexes] = useState({
     Luxta: 0,
-    Inax: 0,
+    DaiThanh: 0,
     Hwata: 0,
     Ariston: 0
   });
@@ -149,14 +149,14 @@ const Home = ({addtocart}) => {
       const interval = setInterval(() => {
           setStartIndexes((prevIndexes) => ({
               Luxta: (prevIndexes.Luxta + 4) % brandLuxta.length,
-              Inax: (prevIndexes.Inax + 4) % brandInax.length,
+              DaiThanh: (prevIndexes.DaiThanh + 4) % brandDaiThanh.length,
               Hwata: (prevIndexes.Hwata + 4) % brandHwata.length,
               Ariston: (prevIndexes.Ariston + 4) % brandAriston.length
           }));
       }, 5000); // Cập nhật mỗi 5 giây
 
       return () => clearInterval(interval);
-  }, [brandLuxta.length, brandInax.length, brandHwata.length, brandAriston.length]);
+  }, [brandLuxta.length, brandDaiThanh.length, brandHwata.length, brandAriston.length]);
 
   // Lấy 4 sản phẩm từ mỗi thương hiệu
   const getDisplayedProducts = (brand, startIndex) => {
@@ -170,7 +170,7 @@ const Home = ({addtocart}) => {
 
   // Hiển thị các sản phẩm cho từng brand
   const displayedProductsLuxta = getDisplayedProducts(brandLuxta, startIndexes.Luxta);
-  const displayedProductsInax = getDisplayedProducts(brandInax, startIndexes.Inax);
+  const displayedProductsDaiThanh = getDisplayedProducts(brandDaiThanh, startIndexes.DaiThanh);
   const displayedProductsHwata = getDisplayedProducts(brandHwata, startIndexes.Hwata);
   const displayedProductsAriston = getDisplayedProducts(brandAriston, startIndexes.Ariston);
 
@@ -384,10 +384,10 @@ const Home = ({addtocart}) => {
                 </div>
                 <div className='box'>
                   <div className='header'>
-                    <h2>Hãng Inax </h2>
+                    <h2>Hãng Đại Thành </h2>
                   </div>
                   {
-                    displayedProductsInax.map((curElm, index) => 
+                    displayedProductsDaiThanh.map((curElm, index) => 
                     {
                       return(
                       <>

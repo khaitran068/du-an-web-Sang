@@ -138,6 +138,8 @@ const Shop = ({shop, FilterCat, allcatefilter, FilterBrand, addtocart}) => {
                             <li onClick={() => FilterCat ("voi lavabo")}># Vòi Lavabo</li>
                             <li onClick={() => FilterCat ("voi xit")}># Vòi Xịt</li>
                             <li onClick={() => FilterCat ("xa tieu nam")}># Xã Tiểu Nam</li>
+                            <li onClick={() => FilterCat ("bon nuoc")}># Bồn Nước</li>
+                            <li onClick={() => FilterCat ("may nuoc nong")}># Máy Nước Nóng</li>
                         </ul>
                     </div>
                 </div>
@@ -153,9 +155,11 @@ const Shop = ({shop, FilterCat, allcatefilter, FilterBrand, addtocart}) => {
                     <div className='box'>
                         <ul>
                             <li onClick={() => FilterBrand ("Luxta")}># Hãng Luxta</li>
-                            <li onClick={() => FilterBrand ("Inax")}># Hãng Inax</li>
-                            <li onClick={() => FilterBrand ("TOTO")}># Hãng TOTO</li>
+                            <li onClick={() => FilterBrand ("Ariston")}># Hãng Ariston</li>
+                            <li onClick={() => FilterBrand ("Hwata")}># Hãng HWATA</li>
                             <li onClick={() => FilterBrand ("DaiThanh")}># Hãng Đại Thành</li>
+                            <li onClick={() => FilterBrand ("Wapi")}># Hãng WAPI</li>
+                            <li onClick={() => FilterBrand ("ToanMy")}># Hãng Toàn Mỹ</li>
                         </ul>
                     </div>
                 </div>
