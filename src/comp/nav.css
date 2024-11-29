@@ -30,6 +30,7 @@
 .header .mid_header
 {
     display: flex;
+    gap: 5px;
     padding: 10px 40px;
     max-width: 100%;
     justify-content: space-between;
@@ -182,50 +183,64 @@
     }
 
     .header .mid_header {
-        /* flex-direction: column; Chuyển sang hàng dọc */
         align-items: center;
-        padding: 10px 20px;
+        padding: 5px 10px;
         display: flex;
         justify-content: space-between;
     }
 
     .header .mid_header .logo img {
         width: 45px; /* Thu nhỏ logo */
+        max-width: 80%;
+    }
+    .header .mid_header .search_box {
+        width: 60%;
     }
 
     .header .mid_header .search_box input {
         width: 80%; /* Đảm bảo input chiếm toàn bộ chiều rộng */
         margin-bottom: 10px;
+        padding: 10px 5px;
     }
 
     .header .mid_header .search_box button {
         width: 20%; /* Đặt nút ở cùng chiều rộng với input */
         margin-right: 0px;
+        padding: 10px 5px;
     }
 
     .header .mid_header .user {
+        width: 20%;
         margin-right: 0px;
         font-size: 14px;
         justify-content: center;
     }
+    .header .mid_header .user .icon
+    {
+        margin-right: 5px;
+    }
     .header .mid_header .user .btn button
     {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .header .last_header {
-        /* flex-direction: column; Chuyển bố cục thành dọc */
         align-items: center;
         text-align: center;
-        padding: 10px 20px;
+        padding: 5px 5px;
     }
 
     .header .last_header .user_profile {
         margin-bottom: 15px;
+        width: 20%;
+        gap: 0px;
+        margin-right: 5px;
+        margin-left: 0px;
     }
 
     .header .last_header .user_profile .info h2 {
         font-size: 12px; /* Giảm kích thước chữ */
+        padding: 5px 5px;
     }
 
     .header .last_header .user_profile .info p {
@@ -233,8 +248,8 @@
     }
 
     .header .last_header .nav ul {
-        /* flex-direction: column; Danh sách link xếp dọc */
         align-items: center;
+        margin-right: 5px;
     }
 
     .header .last_header .nav ul li .link {
@@ -244,10 +259,10 @@
     }
 
     .header .last_header .offer {
-        width: 30%; /* Chiếm toàn bộ chiều ngang */
+        width: 20%; /* Chiếm toàn bộ chiều ngang */
         margin-bottom: 10px;
         margin-right: 5px; /* Thêm khoảng cách với thành phần dưới */
-        padding: 10px 10px;
+        padding: 5px 5px;
     }
 
     .header .last_header .offer p {

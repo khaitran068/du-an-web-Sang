@@ -49,11 +49,11 @@ const App = () => {
 
    //Shop Search Filter
 
-   const searchlength = (search || []).length === 0
+   const searchlength = ((search || []).length === 0 || !search.trim())
    const searchProduct = () =>{
    if(searchlength)
    {
-     alert("Please Search Something !")
+     alert("Vui lòng nhập sản phẩm cần tìm !")
      setShop(Homeproduct)
    }
    else

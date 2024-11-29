@@ -8,6 +8,8 @@ import { FiLogIn } from 'react-icons/fi';
 import { CiLogout,CiUser} from 'react-icons/ci';
 
 const Nav = ({search, setSearch, searchProduct}) => {
+
+
   //phím enter thay click tìm kiếm
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
@@ -93,7 +95,7 @@ const Nav = ({search, setSearch, searchProduct}) => {
             </ul>
           </div>
           <div className='offer'>
-            <p>Giảm 10% tấc cả sản phẩm</p>
+            <p>Giảm 10% tất cả sản phẩm</p>
           </div>
         </div>
     </div>

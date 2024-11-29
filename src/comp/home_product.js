@@ -2604,8 +2604,8 @@ const Homeproduct =
     {
         id: 149,
         Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 120 lít',
-        originalPrice: 3100000,
-        discountPrice: 3100000,
+        originalPrice: 8600000,
+        discountPrice: 3570000,
         image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         cat: 'may nuoc nong',
@@ -2623,30 +2623,30 @@ const Homeproduct =
     },
     {
         id: 150,
-        Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 300 lít',
-        originalPrice: 3725000,
-        discountPrice: 3725000,
+        Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 240 lít',
+        originalPrice: 15300000,
+        discountPrice: 6390000,
         image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         cat: 'may nuoc nong',
         brand: 'Wapi',
         type: 'new',
-        description: `Sản phẩm sản xuất theo công nghệ CHLB Đức
-        Vật liệu ruột bình: Thép không gỉ (Inox) SUS 304 – 2B
+        description: `Vật liệu ruột bình: Thép không gỉ (Inox) SUS 304 – 2B
         Vật liệu vỏ bình: Thép không gỉ (Inox)
         Vật liệu khung chân: Thép không gỉ (Inox)
         Ống chân không thu nhiệt: Ø58×1800
         Lớp bảo ôn – Cách nhiệt: Dày 55mm
         Đường kính bồn: Ø 460mm
         Dày: 0.41mm
-        Số ống: 30 ống
-        Kích thước: (D x R x C mm) 2000 x 2610 x1200`,
+        Số ống: 24 ống
+        Kích thước: (D x R x C mm) 2000 x 2130 x1200`,
+        
     },
     {
         id: 151,
         Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 150 lít',
-        originalPrice: 3775000,
-        discountPrice: 3775000,
+        originalPrice: 10200000,
+        discountPrice: 4280000,
         image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         cat: 'may nuoc nong',
@@ -2665,8 +2665,8 @@ const Homeproduct =
     {
         id: 152,
         Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 180 lít',
-        originalPrice: 4450000,
-        discountPrice: 4450000,
+        originalPrice: 11800000,
+        discountPrice: 4980000,
         image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         cat: 'may nuoc nong',
@@ -2685,8 +2685,8 @@ const Homeproduct =
     {
         id: 153,
         Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 200 lít',
-        originalPrice: 5000000,
-        discountPrice: 5000000,
+        originalPrice: 13300000,
+        discountPrice: 5450000,
         image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         cat: 'may nuoc nong',
@@ -2704,9 +2704,9 @@ const Homeproduct =
     },
     {
         id: 154,
-        Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 240 lít',
-        originalPrice: 5900000,
-        discountPrice: 5900000,
+        Name: 'Máy nước nóng năng lượng mặt trời WAPI WAP-N01-58 300 lít',
+        originalPrice: 18600000,
+        discountPrice: 7800000,
         image: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         image1: 'image/may-nuoc-nong-nang-luong-wapi.jpg',
         cat: 'may nuoc nong',
@@ -2719,8 +2719,8 @@ const Homeproduct =
         Lớp bảo ôn – Cách nhiệt: Dày 55mm
         Đường kính bồn: Ø 460mm
         Dày: 0.41mm
-        Số ống: 24 ống
-        Kích thước: (D x R x C mm) 2000 x 2130 x1200`,
+        Số ống: 30 ống
+        Kích thước: (D x R x C mm) 2000 x 2610 x1200`,    
     },
     {
         id: 155,
@@ -3041,8 +3041,8 @@ const Homeproduct =
         Name: 'Bồn nước inox đại thành 1000 ngang 1000l',
         originalPrice: 5099000,
         discountPrice: 3850000,
-        image: 'image/1000 NGANG.jpg',
-        image1: 'image/1000 NGANG.jpg',
+        image: 'image/1000 NGANG.png',
+        image1: 'image/1000 NGANG.png',
         cat: 'bon nuoc',
         brand: 'DaiThanh',
         type: 'new',
@@ -3081,8 +3081,8 @@ const Homeproduct =
         Name: 'Bồn nước inox đại thành 1500 ngang 1500l',
         originalPrice: 7709000,
         discountPrice: 5790000,
-        image: 'image/1500 NGANG.jpg',
-        image1: 'image/1500 NGANG.jpg',
+        image: 'image/1500 NGANG.png',
+        image1: 'image/1500 NGANG.png',
         cat: 'bon nuoc',
         brand: 'DaiThanh',
         type: 'new',
@@ -3121,8 +3121,8 @@ const Homeproduct =
         Name: 'Bồn nước inox đại thành 2000 ngang 2000l',
         originalPrice: 10069000,
         discountPrice: 7550000,
-        image: 'image/2000 NGANG.jpg',
-        image1: 'image/2000 NGANG.jpg',
+        image: 'image/2000 NGANG.png',
+        image1: 'image/2000 NGANG.png',
         cat: 'bon nuoc',
         brand: 'DaiThanh',
         type: 'new',
@@ -3138,7 +3138,7 @@ const Homeproduct =
     },
     {
         id: 175,
-        Name: 'Bồn nước nhựa đại thành 500 đứng 500l',
+        Name: 'Bồn nước nhựa đại thành Plus 500 đứng 500l',
         originalPrice: 1650000,
         discountPrice: 1160000,
         image: 'image/500 ĐỨNG PLUS.jpg',
@@ -3157,7 +3157,7 @@ const Homeproduct =
     },
     {
         id: 176,
-        Name: 'Bồn nước nhựa đại thành 1000 đứng 1000l',
+        Name: 'Bồn nước nhựa đại thành plus 1000 đứng 1000l',
         originalPrice: 2700000,
         discountPrice: 1770000,
         image: 'image/1000 ĐỨNG PLUS.jpg',
@@ -3176,7 +3176,7 @@ const Homeproduct =
     },
     {
         id: 177,
-        Name: 'Bồn nước nhựa đại thành 1500 đứng 1500l',
+        Name: 'Bồn nước nhựa đại thành plus 1500 đứng 1500l',
         originalPrice: 4100000,
         discountPrice: 2720000,
         image: 'image/1500 ĐỨNG PLUS.jpg',
@@ -3195,7 +3195,7 @@ const Homeproduct =
     },
     {
         id: 178,
-        Name: 'Bồn nước nhựa đại thành 2000 đứng 2000l',
+        Name: 'Bồn nước nhựa đại thành plus 2000 đứng 2000l',
         originalPrice: 5300000,
         discountPrice: 2910000,
         image: 'image/2000 ĐỨNG PLUS.jpg',
@@ -3214,7 +3214,7 @@ const Homeproduct =
     },
     {
         id: 179,
-        Name: 'Bồn nước nhựa đại thành 500 ngang 500l',
+        Name: 'Bồn nước nhựa đại thành plus 500 ngang 500l',
         originalPrice: 1850000,
         discountPrice: 1290000,
         image: 'image/500 NGANG PLUS ĐẠI THÀNH.jpg',
@@ -3234,7 +3234,7 @@ const Homeproduct =
     },
     {
         id: 180,
-        Name: 'Bồn nước nhựa đại thành 1000 ngang 1000l',
+        Name: 'Bồn nước nhựa đại thành plus 1000 ngang 1000l',
         originalPrice: 3300000,
         discountPrice: 2300000,
         image: 'image/1000 NGANG PLUS ĐẠI THÀNH.jpg',
