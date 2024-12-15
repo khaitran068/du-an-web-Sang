@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './nav.css';
 import { useAuth0 } from "@auth0/auth0-react";
 import {Link} from 'react-router-dom';
@@ -9,14 +10,23 @@ import { CiLogout,CiUser} from 'react-icons/ci';
 
 const Nav = ({search, setSearch, searchProduct}) => {
 
-
+  const navigate = useNavigate();
   //phím enter thay click tìm kiếm
-  const handleKeyPress = (event) => {
-    if (event.key === "Enter") {
-      searchProduct(); // Gọi hàm tìm kiếm khi nhấn Enter
-    }
+  const handleSearch = (event) => {
+    // Nếu sự kiện là phím và phím đó không phải "Enter", dừng xử lý
+    if (event.type === "keydown" && event.key !== "Enter") 
+      return;
+  
+    // Nếu là click hoặc phím "Enter", thực hiện tìm kiếm
+    navigate(
+      `/cửa-hàng-thiết-bị-vệ-sinh-nội-thất?query=${encodeURIComponent(
+        search.trim()
+      )}`
+    );
+    searchProduct();
   };
-    const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
+
+  const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
   return (
     <>
     <div className='header'>
@@ -33,8 +43,8 @@ const Nav = ({search, setSearch, searchProduct}) => {
                 <img src='logo.jpg' alt='logo'></img>
             </div>
             <div className='search_box'>
-                <input type='text' value={search} placeholder='Tìm kiếm' onChange={(e) => setSearch(e.target.value)} onKeyDown={handleKeyPress}></input>
-                <button onClick={searchProduct}><AiOutlineSearch /></button>
+                <input type='text' value={search} placeholder='Tìm kiếm' onChange={(e) => setSearch(e.target.value)} onKeyDown={handleSearch}></input>
+                <button onClick={handleSearch}><AiOutlineSearch /></button>
             </div>
             {
                 isAuthenticated?

@@ -8,7 +8,7 @@ import AutoBanner from './banner';
 import { AiFillEye, AiFillHeart, AiOutlineShoppingCart, AiOutlineClose} from "react-icons/ai";
 import {BiLogoFacebook, BiLogoTwitter, BiLogoInstagram, BiLogoYoutube} from "react-icons/bi";
 
-const Home = ({addtocart, shop, FilterType, allcatefilter}) => {
+const Home = ({addtocart}) => {
 
   // Product category
   const [brandLuxta, setBrandLuxta] =  useState([])
@@ -20,7 +20,23 @@ const Home = ({addtocart, shop, FilterType, allcatefilter}) => {
   const itemsPerPage = 16; // Số lượng sản phẩm trên mỗi trang
   const [currentPage, setCurrentPage] = useState(0);
 
+  //shop Type filter
+  const FilterType = (x) =>{
+    const typefilter = Homeproduct.filter((product) =>
+    {
+      return product.type ===x;
+    })
+    setShop(typefilter)
+  }
+
+  //all filter type
+  const allcatefilter = () =>{
+    setShop(Homeproduct)
+  }
+
+
    // Reset currentPage về 0 khi shop thay đổi
+   const [shop, setShop] = useState(Homeproduct)
    useEffect(() => {
     setCurrentPage(0);
   }, [shop]);

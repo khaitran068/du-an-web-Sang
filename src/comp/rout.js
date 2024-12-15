@@ -8,7 +8,7 @@ const Rout = ({shop, FilterCat, allcatefilter, FilterBrand, FilterType, addtocar
   return (
     <>
     <Routes>
-      <Route path='/' element={<Home addtocart={addtocart} shop={shop} allcatefilter={allcatefilter} FilterType={FilterType}/>}/>
+      <Route path='/' element={<Home addtocart={addtocart} />}/>
       <Route path='/chi-tiết-đơn-hàng' element={<Cart cart={cart} setCart={setCart} />} />
       <Route path='cửa-hàng-thiết-bị-vệ-sinh-nội-thất' element={<Shop shop={shop} FilterCat = {FilterCat} allcatefilter={allcatefilter} FilterBrand={FilterBrand} addtocart={addtocart} />}/>
       <Route path='liên-hệ-công-ty-thiết-bị-vệ-sinh-nội-thất' element={<Contact />} />

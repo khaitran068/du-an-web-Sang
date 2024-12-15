@@ -130,6 +130,7 @@
 .header .last_header .nav ul
 {
     display: flex;
+    gap: 5px;
 }
 .header .last_header .nav ul li
 {

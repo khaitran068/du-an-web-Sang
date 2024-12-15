@@ -5,6 +5,37 @@ import { AiFillHeart, AiFillEye, AiOutlineClose} from 'react-icons/ai';
 import { useState, useEffect, useRef } from 'react'
 
 const Shop = ({shop, FilterCat, allcatefilter, FilterBrand, addtocart}) => {
+
+    //hien subcategory
+    const [expandedCategory, setExpandedCategory] = useState(null);
+    // Dữ liệu category
+  const categories = [
+    { name: "phụ kiện", subcategories: ["giá kệ móc", "máy sấy tay",
+         "phễu thoát sàn", "phụ kiện bồn cầu", "phụ kiện bồn tiểu", 
+        "phụ kiện chậu"] },
+    // { name: "Bồn Rửa", subcategories: ["Bồn Rửa Tay", "Bồn Rửa Chén"] },
+  ];
+
+  // Xử lý sự kiện click
+  const handleCategoryClick = (categoryName) => {
+    setExpandedCategory((prev) => (prev === categoryName ? null : categoryName));
+  };
+
+  // Xử lý sự kiện click vào subcategory
+  const handleSubCategoryClick = (subcat) => {
+    FilterCat(removeDiacritics(subcat)); // Gọi hàm lọc
+    setExpandedCategory(null); // Đóng tất cả danh sách con
+  };
+
+  //chuyễn đổi chữ có dấu sang không dấu
+ const removeDiacritics = (str) => {
+    return str
+      .normalize("NFD") // Chuẩn hóa chuỗi Unicode
+      .replace(/[\u0300-\u036f]/g, "") // Loại bỏ dấu
+      .replace(/đ/g, "d") // Chuyển đổi "đ" thành "d"
+      .replace(/Đ/g, "D"); // Chuyển đổi "Đ" thành "D"
+  };
+
     //Phân Trang
     const [currentPage, setCurrentPage] = useState(0); // Trang hiện tại
     const itemsPerPage = 20; // Số sản phẩm mỗi trang
@@ -136,10 +167,34 @@ const Shop = ({shop, FilterCat, allcatefilter, FilterBrand, addtocart}) => {
                             <li onClick={() => FilterCat ("voi bep")}># Vòi Bếp</li>
                             <li onClick={() => FilterCat ("voi ho")}># Vòi Hồ</li>
                             <li onClick={() => FilterCat ("voi lavabo")}># Vòi Lavabo</li>
+                            <li onClick={() => FilterCat ("chau lavabo")}># Chậu Lavabo</li>
                             <li onClick={() => FilterCat ("voi xit")}># Vòi Xịt</li>
                             <li onClick={() => FilterCat ("xa tieu nam")}># Xã Tiểu Nam</li>
+                            <li onClick={() => FilterCat ("bon tieu nam")}># Bồn Tiểu Nam</li>
                             <li onClick={() => FilterCat ("bon nuoc")}># Bồn Nước</li>
                             <li onClick={() => FilterCat ("may nuoc nong")}># Máy Nước Nóng</li>
+                            <li onClick={() => FilterCat ("bon cau")}># Bồn Cầu</li>
+                            <ul>
+                                {categories.map((category) => (
+                                    <li key={category.name}>
+                                    <span onClick={() => handleCategoryClick(category.name)}>
+                                        # {category.name}
+                                    </span>
+                                    {expandedCategory === category.name && (
+                                        <ul>
+                                        {category.subcategories.map((subcat) => (
+                                            <li
+                                                key={subcat}
+                                                onClick={() => handleSubCategoryClick(subcat)}
+                                            >
+                                                . {subcat}
+                                            </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                    </li>
+                                ))}
+                            </ul>
                         </ul>
                     </div>
                 </div>
@@ -160,6 +215,7 @@ const Shop = ({shop, FilterCat, allcatefilter, FilterBrand, addtocart}) => {
                             <li onClick={() => FilterBrand ("DaiThanh")}># Hãng Đại Thành</li>
                             <li onClick={() => FilterBrand ("Wapi")}># Hãng WAPI</li>
                             <li onClick={() => FilterBrand ("ToanMy")}># Hãng Toàn Mỹ</li>
+                            <li onClick={() => FilterBrand ("Inax")}># Hãng Inax</li>
                         </ul>
                     </div>
                 </div>

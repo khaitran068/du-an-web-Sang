@@ -5,6 +5,7 @@ import Rout from './comp/rout'
 import Footer from'./comp/footer'
 import Homeproduct from './comp/home_product'
 import PhoneButton from './comp/phone'
+import ZaloButton from './comp/zalo'
 
 const App = () => {
   // Add To cart
@@ -49,8 +50,9 @@ const App = () => {
 
    //Shop Search Filter
 
-   const searchlength = ((search || []).length === 0 || !search.trim())
-   const searchProduct = () =>{
+   
+  const searchProduct = () =>{
+  const searchlength = ((search || []).length === 0 || !search.trim())
    if(searchlength)
    {
      alert("Vui lòng nhập sản phẩm cần tìm !")
@@ -105,6 +107,7 @@ const addtocart = (product) =>
     <BrowserRouter>
     <Nav search={search} setSearch={setSearch} searchProduct={searchProduct} />
     <Rout cart={cart} setCart={setCart} shop={shop} FilterCat = {FilterCat} allcatefilter={allcatefilter} FilterBrand = {FilterBrand} FilterType={FilterType} addtocart={addtocart}></Rout>
+    <ZaloButton />
     <PhoneButton />
     <Footer />
     </BrowserRouter>

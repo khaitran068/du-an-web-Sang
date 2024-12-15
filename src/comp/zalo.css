@@ -1,0 +1,70 @@
+/* @keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    75% {
+        transform: translateX(-2px);
+    }
+} */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-15deg); /* Lắc nhẹ sang trái */
+    }
+    50% {
+        transform: rotate(15deg); /* Lắc nhẹ sang phải */
+    }
+    75% {
+        transform: rotate(-15deg); /* Lắc nhẹ sang trái */
+    }
+}
+.zalo-button {
+    position: fixed; /* Giữ cố định trên màn hình */
+    bottom: 13%; /* Cách đáy màn hình 20px */
+    left: 5px; /* Cách mép phải màn hình 20px */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa icon và text */
+    background-color: #0088ff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 50px; /* Làm nút bo tròn */
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000; /* Đảm bảo nút luôn trên cùng */
+    animation: pulse 1.5s infinite; /* lớn lên nhỏ xuống */
+}
+
+.zalo-button:hover {
+    background-color: #0066cc;
+    transform: scale(1.05);
+}
+
+.zalo-button .zalo-icon {
+    width: 30px;
+    height: 30px;
+    animation: shake 0.5s infinite; /* Hiệu ứng lắc nhẹ */
+}
+@media only screen and (max-width: 768px){
+    .zalo-button{
+        bottom: 9%;
+    }
+}

@@ -58,10 +58,10 @@ const Footer = () => {
                     <div className='box'>
                         <h3>Thông tin tài khoản</h3>
                         <ul>
-                            <li>About us</li>
-                            <li>Account</li>
-                            <li>Payment</li>
-                            <li>Sales</li>
+                            <li>Thông tin</li>
+                            <li>Tài khoản</li>
+                            <li>Thanh toán</li>
+                            <li>Giảm giá</li>
                         </ul>
                     </div>
                     <div className='box'>
